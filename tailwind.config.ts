@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     container:{
       center: true,
-    }
+    },
   },
   plugins: [],
 };

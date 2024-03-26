@@ -7,9 +7,9 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    container:{
+    container: {
       center: true,
-    },
+    }
   },
   plugins: [],
 };

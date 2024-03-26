@@ -6,11 +6,11 @@ import Button from "./Button";
 import HeroCard from "./HeroCard";
 
 const workSans = Work_Sans({ weight: "400", subsets: ["latin"] });
-const spaceMono = Space_Mono({ weight: "400", subsets: ["latin"] });
+const spaceMono = Space_Mono({ weight: "700", subsets: ["latin"] });
 
 const Hero = () => {
   return (
-    <section className="py-20 max-w-[67rem] mx-auto">
+    <section className="py-20 max-w-[72rem] mx-auto">
       <div className="container text-cyan-50 flex gap-14 justify-between">
         <div className={`${workSans.className} flex flex-col`}>
           <div className="flex flex-col gap-6">

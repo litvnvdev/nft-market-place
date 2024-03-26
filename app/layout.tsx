@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={spaceMono.className}>
+      <body className={`${workSans.className} bg-zinc-800`}>
         {children}
       </body>
     </html>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Work_Sans, Space_Mono } from "next/font/google";
 
 
-import Button from "./Button";
+import PrimaryButton from "./PrimaryButton";
 import HeroCard from "./HeroCard";
 
 const workSans = Work_Sans({ weight: "400", subsets: ["latin"] });
@@ -21,7 +21,7 @@ const Hero = () => {
               NFT marketplace UI created with Anima for Figma. Collect, buy and
               sell art from more than 20k NFT artists.
             </p>
-            <Button max_width="max-w-48">Get started</Button>
+            <PrimaryButton max_width="max-w-48">Get started</PrimaryButton>
           </div>
 
           <div className="flex max-auto max-w-[27rem] mt-6 gap-24 justify-center">

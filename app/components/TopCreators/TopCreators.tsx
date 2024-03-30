@@ -5,14 +5,14 @@ const TopCreators = () => {
   return (
     <section className="py-20">
       <div className="container max-w-[72rem]">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-end max-w-[69rem]">
           <div className="flex flex-col text-left text-cyan-50">
             <h1 className="text-3xl font-semibold">Top Creators</h1>
             <h3 className="text-lg mt-3">
               Checkout Top Rated Creators on the NFT Marketplace
             </h3>
           </div>
-          <SecondaryButton max_width="max-w-64">
+          <SecondaryButton>
             icon View Rankings
           </SecondaryButton>
         </div>

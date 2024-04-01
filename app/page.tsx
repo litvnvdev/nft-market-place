@@ -4,6 +4,7 @@ import TrendingCollection from "./components/TrendingCollection/TrendingCollecti
 import TopCreators from "./components/TopCreators/TopCreators";
 import Categories from "./components/Categories/Categories";
 import DiscoverNFTs from "./components/DiscoverNFTs/DiscoverNFTs";
+import NFTHighlight from "./components/NFTHighlight/NFTHighlight";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Categories />
         <DiscoverNFTs />
       </main>
+      <NFTHighlight />
     </>
   );
 }

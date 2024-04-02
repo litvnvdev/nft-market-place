@@ -2,7 +2,7 @@ import Timer from "./Timer";
 
 const NFTHighlight = () => {
   return (
-    <section className="my-40 max-w-full h-dvh bg-[url(/NFT_highlight.png)] bg-no-repeat bg-center bg-cover ">
+    <section className="mt-40 max-w-full h-dvh bg-[url(/NFT_highlight.png)] bg-no-repeat bg-center bg-cover ">
       <div className="max-w-full h-full container  bg-gradient-to-b from-transparent to-violet-500">
         <div className="max-w-[72rem] container h-full flex justify-between text-cyan-50 items-end pb-40">
           <div className="flex flex-col gap-8">

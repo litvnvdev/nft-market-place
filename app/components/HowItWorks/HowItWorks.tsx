@@ -8,7 +8,7 @@ const HowItWorks = () => {
           <h1 className="text-3xl font-semibold">How It Works</h1>
           <h3 className="text-xl">Find out how to get started</h3>
         </div>
-        <div className="mt-12 grid grid-cols-3 items-center">
+        <div className="mt-12 grid grid-cols-3 gap-24 w-full">
           <HowItWorksCard />
           <HowItWorksCard />
           <HowItWorksCard />

@@ -7,6 +7,7 @@ import DiscoverNFTs from "./components/DiscoverNFTs/DiscoverNFTs";
 import NFTHighlight from "./components/NFTHighlight/NFTHighlight";
 import HowItWorks from "./components/HowItWorks/HowItWorks";
 import Subscribe from "./components/Subscribe/Subscribe";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <NFTHighlight />
       <HowItWorks />
       <Subscribe />
+      <Footer />
     </>
   );
 }

@@ -7,7 +7,7 @@ const spaceMono = Space_Mono({ weight: "700", subsets: ["latin"] });
 const Navbar = () => {
   const navBarItems = ["Marketplace", "Rankings", "Connect a wallet"];
   return (
-    <nav className="container max-w-full py-5 px-12 border-2 border-violet-600">
+    <nav className="container max-w-full py-5 px-12">
       <ul
         className={`${workSans.className} container items-center flex justify-between gap-1 text-cyan-50`}
       >

@@ -1,3 +1,5 @@
+import { FaRegEye } from "react-icons/fa";
+
 import SecondaryButton from "../SecondaryButton";
 import NFTCard from "./NFTCard";
 
@@ -12,7 +14,9 @@ const DiscoverNFTs = () => {
               Explore new trending NFTs See All
             </h3>
           </div>
-          <SecondaryButton>icon See all</SecondaryButton>
+          <SecondaryButton>
+            <FaRegEye size={20} className="fill-violet-500 group-hover:fill-cyan-50 duration-300" /> See all
+          </SecondaryButton>
         </div>
         <div className="grid grid-cols-3 gap-12">
           <NFTCard />

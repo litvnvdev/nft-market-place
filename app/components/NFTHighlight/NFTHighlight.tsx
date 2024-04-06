@@ -1,3 +1,5 @@
+import { FaRegEye } from "react-icons/fa";
+
 import Timer from "./Timer";
 
 const NFTHighlight = () => {
@@ -10,7 +12,8 @@ const NFTHighlight = () => {
               Shroomie
             </button>
             <h1 className="text-6xl font-semibold">Magic Mashrooms</h1>
-            <button className="bg-cyan-50 text-black w-44 py-5 rounded-3xl font-semibold">
+            <button className="group flex gap-3 items-center justify-center bg-cyan-50 duration-300 hover:bg-zinc-400 hover:text-cyan-50 text-black w-44 py-5 px-5 rounded-3xl font-semibold">
+              <FaRegEye size={20} className="group-hover:fill-cyan-50 fill-violet-500"/>
               See NFT
             </button>
           </div>

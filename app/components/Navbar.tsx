@@ -1,5 +1,7 @@
 import { Work_Sans, Space_Mono } from "next/font/google";
 import Image from "next/image";
+import { FaRegUser } from "react-icons/fa";
+
 import PrimaryButton from "./PrimaryButton";
 const workSans = Work_Sans({ weight: "500", subsets: ["latin"] });
 const spaceMono = Space_Mono({ weight: "700", subsets: ["latin"] });
@@ -20,7 +22,10 @@ const Navbar = () => {
             <a href="#">{el}</a>
           </li>
         ))}
-        <PrimaryButton>Sing Up</PrimaryButton>
+        <PrimaryButton>
+          <FaRegUser size={20}/>
+          Sing Up
+          </PrimaryButton>
       </ul>
     </nav>
   );

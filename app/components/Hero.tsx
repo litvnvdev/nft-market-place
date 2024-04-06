@@ -1,6 +1,5 @@
-import Image from "next/image";
 import { Work_Sans, Space_Mono } from "next/font/google";
-
+import { MdOutlineRocketLaunch } from "react-icons/md";
 
 import PrimaryButton from "./PrimaryButton";
 import HeroCard from "./HeroCard";
@@ -21,7 +20,11 @@ const Hero = () => {
               NFT marketplace UI created with Anima for Figma. Collect, buy and
               sell art from more than 20k NFT artists.
             </p>
-            <PrimaryButton max_width="max-w-48">Get started</PrimaryButton>
+
+            <PrimaryButton max_width="max-w-52">
+            <MdOutlineRocketLaunch size={20}/>
+              Get started
+              </PrimaryButton>
           </div>
 
           <div className="flex max-auto max-w-[27rem] mt-6 gap-24 justify-center">

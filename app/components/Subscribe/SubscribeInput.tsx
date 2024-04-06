@@ -1,4 +1,5 @@
 "use client";
+import { IoMailOutline } from "react-icons/io5";
 import React, { useState } from "react";
 type InputProps = {
   margint?: string
@@ -19,7 +20,8 @@ const SubscribeInput = ({margint}:InputProps) => {
         value={text}
         placeholder="Enter your email here"
       />
-      <button className="px-10 py-4 text-cyan-50 absolute right-0 bg-violet-500 duration-300 hover:bg-violet-600 rounded-2xl">
+      <button className="flex gap-3 justify-center items-center px-10 py-4 text-cyan-50 absolute right-0 top-0 bg-violet-500 duration-300 hover:bg-violet-600 rounded-2xl">
+        <IoMailOutline size={20}/>
         Subscribe
       </button>
     </div>

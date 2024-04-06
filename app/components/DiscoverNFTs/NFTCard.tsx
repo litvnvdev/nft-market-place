@@ -1,4 +1,5 @@
 import { Space_Mono } from "next/font/google";
+import NFTArtist from "../NFTArtist";
 const spaceMono = Space_Mono({ weight: "400", subsets: ["latin"] });
 
 const NFTCard = () => {
@@ -7,8 +8,7 @@ const NFTCard = () => {
       <div className="bg-[url(/nft_card.png)] bg-center bg-no-repeat bg-contain w-80 h-80 rounded-2xl"></div>
       <div className="flex flex-col w-80 px-6 py-6 bg-zinc-700 rounded-b-2xl absolute -bottom-32">
         <div className="flex flex-col items-start mt-4">
-          <h2 className="text-xl font-semibold">NFT name</h2>
-          <h3 className="text-sm">NFT artist</h3>
+          <NFTArtist name='Privet' width={25} height={25} artist_img="/avatars/avatar_artist_1.png" />
         </div>
         <div className="flex flex-col mt-4">
           <div

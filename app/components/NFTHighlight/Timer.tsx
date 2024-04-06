@@ -14,7 +14,7 @@ const Timer = () => {
         if (time === 0) {
           clearInterval(timer);
           return 0;
-        } else return time - 1;
+        } else return time - 0.5;
       });
     }, 1000);
   }, []);

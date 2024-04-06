@@ -1,4 +1,5 @@
 import CollectionCard from "./CollectionCard";
+import { collectionData } from "@/app/data";
 
 const TrendingCollection = () => {
   return (
@@ -11,9 +12,17 @@ const TrendingCollection = () => {
           </h3>
         </div>
         <div className="flex gap-3 justify-between">
-        <CollectionCard />
-        <CollectionCard />
-        <CollectionCard />
+          {collectionData.map(({ artist, artist_img, title, id, img, img_sec, img_th }) => (
+            <CollectionCard
+              key={id}
+              title={title}
+              img={img}
+              img_sec={img_sec}
+              img_th={img_th}
+              artist_img={artist_img}
+              artist_name={artist}
+            />
+          ))}
         </div>
       </div>
     </section>

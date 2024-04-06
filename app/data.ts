@@ -1,3 +1,17 @@
+import {
+  PiPaintBrushThin,
+  PiSwatches,
+  PiMusicNotes,
+  PiCamera,
+  PiVideoCamera,
+  PiMagicWand,
+  PiBasketball,
+  PiPlanet,
+} from "react-icons/pi";
+
+
+
+
 export const artistData = [
   {
     id: 1,
@@ -90,3 +104,4 @@ export const collectionData = [
     artist_img: "/avatars/avatar_artist_19.png",
   },
 ];
+

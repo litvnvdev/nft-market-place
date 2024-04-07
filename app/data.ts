@@ -1,17 +1,3 @@
-import {
-  PiPaintBrushThin,
-  PiSwatches,
-  PiMusicNotes,
-  PiCamera,
-  PiVideoCamera,
-  PiMagicWand,
-  PiBasketball,
-  PiPlanet,
-} from "react-icons/pi";
-
-
-
-
 export const artistData = [
   {
     id: 1,
@@ -105,3 +91,50 @@ export const collectionData = [
   },
 ];
 
+export const NFTsCardData = [
+  {
+    id: 1,
+    title: "Distant Galaxy",
+    nft_img: "/NFTs/nft_card_1.png",
+    artist_name: "MoonDancer",
+    artist_img: "/avatars/avatar_artist_16.png",
+    price: 1.63,
+  },
+  {
+    id: 2,
+    title: "Life On Edena",
+    nft_img: "/NFTs/nft_card_2.png",
+    artist_name: "NebulaKid",
+    artist_img: "/avatars/avatar_artist_11.png",
+    price: 1.81,
+  },
+  {
+    id: 3,
+    title: "AstroFiction",
+    nft_img: "/NFTs/nft_card_3.png",
+    artist_name: "Spaceone",
+    artist_img: "/avatars/avatar_artist_4.png",
+    price: 1.59,
+  },
+];
+
+export const HowItWorksData = [
+  {
+    id: 1,
+    icon: "/icons/setup_Wallet_Icon.svg",
+    title: "Setup Your wallet",
+    text: "Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.",
+  },
+  {
+    id: 2,
+    icon: "/icons/create_Collection_Icon.svg",
+    title: "Create Collection",
+    text: "Upload your work and setup your collection. Add a description, social links and floor price.",
+  },
+  {
+    id: 3,
+    icon: "/icons/start_Earning_Icon.svg",
+    title: "Start Earning",
+    text: "Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.",
+  },
+];

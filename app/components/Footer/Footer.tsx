@@ -1,13 +1,20 @@
 import Image from "next/image";
 import { Space_Mono } from "next/font/google";
 
-import discordLogo from "/DiscordLogo.svg";
-import twitterLogo from "/TwitterLogo.svg";
-import youtubeLogo from "/YoutubeLogo.svg";
-import instagramLogo from "/InstagramLogo.svg";
+import { PiYoutubeLogo } from "react-icons/pi";
+import { RxDiscordLogo, RxTwitterLogo, RxInstagramLogo } from "react-icons/rx";
+
 import SubscribeInput from "../Subscribe/SubscribeInput";
+import SocialMediaIcon from "./SocialMediaIcon";
 
 const spaceMono = Space_Mono({ weight: "700", subsets: ["latin"] });
+
+const socialIcons = [
+  <RxDiscordLogo className="group-hover:translate-y-1 group-hover:text-cyan-50 duration-300" size={32} />,
+  <PiYoutubeLogo className="group-hover:translate-y-1 group-hover:text-cyan-50 duration-300" size={32} />,
+  <RxTwitterLogo className="group-hover:translate-y-1 group-hover:text-cyan-50 duration-300" size={32} />,
+  <RxInstagramLogo className="group-hover:translate-y-1 group-hover:text-cyan-50 duration-300" size={32} />,
+];
 
 const Footer = () => {
   const navBarItems = ["Marketplace", "Rankings", "Connect a wallet"];
@@ -27,23 +34,9 @@ const Footer = () => {
           <p>NFT marketplace UI created with Anima for Figma.</p>
           <p>Join our community</p>
           <div className="flex gap-2">
-            <a className="hover:translate-y-1 duration-300" href="#">
-              <Image src="/DiscordLogo.svg" alt="logo" width={32} height={32} />
-            </a>
-            <a className="hover:translate-y-1 duration-300" href="#">
-              <Image src="/TwitterLogo.svg" alt="logo" width={32} height={32} />
-            </a>
-            <a className="hover:translate-y-1 duration-300" href="#">
-              <Image src="/YoutubeLogo.svg" alt="logo" width={32} height={32} />
-            </a>
-            <a className="hover:translate-y-1 duration-300" href="#">
-              <Image
-                src="/InstagramLogo.svg"
-                alt="logo"
-                width={32}
-                height={32}
-              />
-            </a>
+            {socialIcons.map((icon, id) => (
+              <SocialMediaIcon key={id} icon={icon} />
+            ))}
           </div>
         </div>
         <div className="flex flex-col gap-4 text-neutral-400">

@@ -1,4 +1,5 @@
 import HowItWorksCard from "./HowItWorksCard";
+import { HowItWorksData } from "@/app/data";
 
 const HowItWorks = () => {
   return (
@@ -9,9 +10,9 @@ const HowItWorks = () => {
           <h3 className="text-xl">Find out how to get started</h3>
         </div>
         <div className="mt-12 grid grid-cols-3 gap-24 w-full">
-          <HowItWorksCard />
-          <HowItWorksCard />
-          <HowItWorksCard />
+          {HowItWorksData.map(({ title, text, id, icon }) => (
+            <HowItWorksCard key={id} title={title} text={text} icon={icon} />
+          ))}
         </div>
       </div>
     </section>

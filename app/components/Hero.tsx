@@ -9,41 +9,41 @@ const spaceMono = Space_Mono({ weight: "700", subsets: ["latin"] });
 
 const Hero = () => {
   return (
-    <section className="py-20 max-w-[72rem] mx-auto">
+    <section className="py-20 lg:max-w-[72rem] md:max-w-[50rem] lg:mx-auto">
       <div className="container text-cyan-50 flex gap-14 justify-between">
         <div className={`${workSans.className} flex flex-col`}>
           <div className="flex flex-col gap-6">
-            <h1 className="text-6xl text-left font-semibold max-w-80">
+            <h1 className="lg:text-6xl md:text-4xl text-left font-semibold max-w-80">
               Discover digital art & Collect NFTs
             </h1>
-            <p className="text-justify text-lg max-w-96">
+            <p className="text-justify lg:text-lg md:text-base max-w-96">
               NFT marketplace UI created with Anima for Figma. Collect, buy and
               sell art from more than 20k NFT artists.
             </p>
 
-            <PrimaryButton max_width="max-w-52">
-            <MdOutlineRocketLaunch size={20}/>
+            <PrimaryButton max_width="w-52">
+              <MdOutlineRocketLaunch size={20} />
               Get started
-              </PrimaryButton>
+            </PrimaryButton>
           </div>
 
-          <div className="flex max-auto max-w-[27rem] mt-6 gap-24 justify-center">
+          <div className="flex max-auto max-w-[27rem] lg:mt-6 md:mt-12 gap-24 justify-center">
             <p>
-              <strong className={`${spaceMono.className} text-2xl`}>
+              <strong className={`${spaceMono.className} lg:text-2xl md:text-xl`}>
                 240k+
               </strong>
               <br />
               Total Sale
             </p>
             <p>
-              <strong className={`${spaceMono.className} text-2xl`}>
+              <strong className={`${spaceMono.className} lg:text-2xl md:text-xl`}>
                 100k+
               </strong>
               <br />
               Auctions
             </p>
             <p>
-              <strong className={`${spaceMono.className} text-2xl`}>
+              <strong className={`${spaceMono.className} lg:text-2xl md:text-xl`}>
                 240k+
               </strong>
               <br />

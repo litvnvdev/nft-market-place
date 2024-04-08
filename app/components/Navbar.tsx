@@ -1,33 +1,55 @@
+"use client";
 import { Work_Sans, Space_Mono } from "next/font/google";
 import Image from "next/image";
 import { FaRegUser } from "react-icons/fa";
+import { CgMenuLeftAlt } from "react-icons/cg";
 
 import PrimaryButton from "./PrimaryButton";
+import { useDevice } from "../hooks/useDevice";
+
 const workSans = Work_Sans({ weight: "500", subsets: ["latin"] });
 const spaceMono = Space_Mono({ weight: "700", subsets: ["latin"] });
 
 const Navbar = () => {
+  const { isMobile } = useDevice();
+  console.log(isMobile);
+
   const navBarItems = ["Marketplace", "Rankings", "Connect a wallet"];
+
   return (
-    <nav className="container max-w-full py-5 px-12">
-      <ul
-        className={`${workSans.className} container items-center flex justify-between gap-1 text-cyan-50`}
-      >
-        <div className='max-w-46 flex gap-2 items-center cursor-pointer'>
-          <Image src="/logo.svg" alt="logo" width={32} height={32}/>
-          <span className={`${spaceMono.className} hover:text-violet-400 duration-300`}>NFT Marketplace</span>
+    <>
+      {isMobile ? (
+        <div className="w-full relative">
+          <button className="border absolute right-0 top-0 text-cyan-50">
+            <CgMenuLeftAlt size={20} />
+          </button>
         </div>
-        {navBarItems.map((el) => (
-          <li className="hover:text-violet-400 duration-300" key={el}>
-            <a href="#">{el}</a>
-          </li>
-        ))}
-        <PrimaryButton>
-          <FaRegUser size={20}/>
-          Sing Up
-          </PrimaryButton>
-      </ul>
-    </nav>
+      ) : (
+        <nav className="container max-w-full flex justify-between py-5 px-12">
+          <div className="max-w-46 flex gap-2 items-center cursor-pointer">
+            <Image src="/logo.svg" alt="logo" width={32} height={32} />
+            <span
+              className={`${spaceMono.className} text-cyan-50 hover:text-violet-400 duration-300`}
+            >
+              NFT Marketplace
+            </span>
+          </div>
+          <ul
+            className={`${workSans.className} w-1/3 items-center flex justify-between gap-3 text-cyan-50`}
+          >
+            {navBarItems.map((el) => (
+              <li className="hover:text-violet-400 duration-300" key={el}>
+                <a href="#">{el}</a>
+              </li>
+            ))}
+            <PrimaryButton>
+              <FaRegUser size={20} />
+              Sing Up
+            </PrimaryButton>
+          </ul>
+        </nav>
+      )}
+    </>
   );
 };
 

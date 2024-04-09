@@ -9,7 +9,7 @@ export function useDevice() {
 
   useEffect(() => {
     const handleResize = () => {
-      let size = window.matchMedia("(max-width: 640px)").matches;
+      let size = window.matchMedia("(max-width: 768px)").matches;
       if (size) {
         setIsMobile(true);
       } else {

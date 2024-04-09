@@ -3,8 +3,8 @@ import { collectionData } from "@/app/data";
 
 const TrendingCollection = () => {
   return (
-    <section className="py-20">
-      <div className="container  flex flex-col max-w-[72rem]">
+    <section className="py-20 max-w-[72rem] mx-auto">
+      <div className="container  flex flex-col ">
         <div className="text-left text-cyan-50">
           <h1 className="text-3xl font-semibold">Trending Collection</h1>
           <h3 className="text-lg mt-3">

@@ -25,8 +25,8 @@ const Navbar = () => {
           </button>
         </div>
       ) : (
-        <nav className="container max-w-full flex justify-between py-5 px-12">
-          <div className="max-w-46 flex gap-2 items-center cursor-pointer">
+        <nav className="lg:w-full md:w-full md:mx-auto  flex lg:justify-center md:text-sm lg:gap-12 md:gap-24 xl:justify-between py-5 px-12">
+          <div className="max-w-44 flex gap-2 items-center cursor-pointer">
             <Image src="/logo.svg" alt="logo" width={32} height={32} />
             <span
               className={`${spaceMono.className} text-cyan-50 hover:text-violet-400 duration-300`}
@@ -35,7 +35,7 @@ const Navbar = () => {
             </span>
           </div>
           <ul
-            className={`${workSans.className} w-1/3 items-center flex justify-between gap-3 text-cyan-50`}
+            className={`${workSans.className} xl:max-w-[30rem] lg:w-1/2 md:w-3/4 items-center flex justify-between xl:gap-3 lg:gap-1 text-cyan-50`}
           >
             {navBarItems.map((el) => (
               <li className="hover:text-violet-400 duration-300" key={el}>

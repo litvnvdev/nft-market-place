@@ -15,14 +15,14 @@ export default function Home() {
       <Navbar />
       <main className="container py-4 text-center">
         <Hero />
-        <TrendingCollection />
+        {/* <TrendingCollection />
         <TopCreators />
         <Categories />
-        <DiscoverNFTs />
+        <DiscoverNFTs /> */}
       </main>
-      <NFTHighlight />
+      {/* <NFTHighlight />
       <HowItWorks />
-      <Subscribe />
+      <Subscribe /> */}
       <Footer />
     </>
   );

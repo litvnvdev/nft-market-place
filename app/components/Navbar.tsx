@@ -2,10 +2,10 @@
 import { Work_Sans, Space_Mono } from "next/font/google";
 import Image from "next/image";
 import { FaRegUser } from "react-icons/fa";
-import { CgMenuLeftAlt } from "react-icons/cg";
 
 import PrimaryButton from "./PrimaryButton";
 import { useDevice } from "../hooks/useDevice";
+import MobileNavbar from "./Navbar/MobileNavbar";
 
 const workSans = Work_Sans({ weight: "500", subsets: ["latin"] });
 const spaceMono = Space_Mono({ weight: "700", subsets: ["latin"] });
@@ -19,11 +19,7 @@ const Navbar = () => {
   return (
     <>
       {isMobile ? (
-        <div className="w-full relative">
-          <button className="border absolute right-0 top-0 text-cyan-50">
-            <CgMenuLeftAlt size={20} />
-          </button>
-        </div>
+        <MobileNavbar />
       ) : (
         <nav className="lg:w-full md:w-full md:mx-auto  flex lg:justify-center md:text-sm lg:gap-12 md:gap-24 xl:justify-between py-5 px-12">
           <div className="max-w-44 flex gap-2 items-center cursor-pointer">

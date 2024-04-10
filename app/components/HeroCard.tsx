@@ -2,10 +2,10 @@ import NFTArtist from "./NFTArtist";
 
 const HeroCard = () => {
   return (
-    <div className="lg:max-w-[32rem] md:max-w-[24rem]">
-      <div className="bg-[url('/Hero.svg')] bg-center bg-no-repeat xl:w-[32rem] lg:w-[26rem] lg:h-[25rem] md:w-[20rem] md:h-[19rem] rounded-t-2xl"></div>
-      <div className="pl-4 h-24 xl:w-[32rem] lg:w-[26rem] md:w-[20rem] rounded-b-lg bg-neutral-700">
-        <div className="flex flex-col items-start gap-1 justify-start">
+    <div className="order-2 w-full mt-4 mx-auto flex flex-col items-center">
+      <div className="w-full bg-[url('/Hero.svg')]  bg-cover bg-center bg-no-repeat h-[20rem] rounded-t-2xl"></div>
+      <div className="w-full h-24 rounded-b-lg bg-neutral-700">
+        <div className="pl-4 flex flex-col items-start gap-1 justify-start">
           <p className="font-semibold mt-2 lg:text-lg md:text-base">
             Space Walking
           </p>

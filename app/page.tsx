@@ -15,8 +15,8 @@ export default function Home() {
       <Navbar />
       <main className="container py-4 text-center">
         <Hero />
-        {/* <TrendingCollection />
-        <TopCreators />
+      <TrendingCollection />
+          {/* <TopCreators />
         <Categories />
         <DiscoverNFTs /> */}
       </main>

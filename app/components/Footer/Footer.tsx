@@ -19,8 +19,8 @@ const socialIcons = [
 const Footer = () => {
   const navBarItems = ["Marketplace", "Rankings", "Connect a wallet"];
   return (
-    <footer className="mt-16 py-8 bg-neutral-700 w-full">
-      <div className="flex justify-between max-w-[72rem] container">
+    <footer className="py-8 bg-neutral-700 w-full">
+      <div className="flex flex-col px-8 gap-3 container">
         <div className="flex flex-col gap-4 text-neutral-400">
           <div className="flex gap-2 text-cyan-50 cursor-pointer">
             <Image src="/logo.svg" alt="logo" width={32} height={32} />
@@ -39,7 +39,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col gap-4 text-neutral-400">
+        <div className="mt-6 flex flex-col gap-4 text-neutral-400">
           <h1 className={`${spaceMono.className} text-cyan-50 text-xl`}>
             Explore
           </h1>
@@ -53,7 +53,7 @@ const Footer = () => {
             </ul>
           </nav>
         </div>
-        <div className="flex flex-col gap-4 w-96 ">
+        <div className="mt-6 flex flex-col gap-4 max-w-96">
           <h1 className={`${spaceMono.className} text-cyan-50 text-xl`}>
             Join our weekly digest
           </h1>

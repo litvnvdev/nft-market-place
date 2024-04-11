@@ -12,7 +12,7 @@ const SubscribeInput = ({margint}:InputProps) => {
     setText(event.target.value);
   };
   return (
-    <div className={`${margint || 'mt-12'} relative`}>
+    <div className={`${margint || 'mt-12'} relative w-full`}>
       <input
         onChange={handleInput}
         className=" text-zinc-950 rounded-2xl w-3/4 py-4 px-5 focus:outline-none"

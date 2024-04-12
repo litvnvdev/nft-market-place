@@ -13,11 +13,11 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="container py-4 text-center">
+      <main className="container py-4">
         <Hero />
-      <TrendingCollection />
-          {/* <TopCreators />
-        <Categories />
+        <TrendingCollection />
+        <TopCreators />
+        {/* <Categories />
         <DiscoverNFTs /> */}
       </main>
       {/* <NFTHighlight />

@@ -16,40 +16,28 @@ const categories = [
     title: "Art",
     img: "/category/category_img_1.png",
     icon: (
-      <PiPaintBrush
-        className=" fill-cyan-50 absolute top-[3.75rem] left-[4.5rem]"
-        size={100}
-      />
+      <PiPaintBrush className=" fill-cyan-50 absolute top-5 left-9" size={80} />
     ),
   },
   {
     title: "Collectibles",
     img: "/category/category_img_2.png",
     icon: (
-      <PiSwatches
-        className=" fill-cyan-50 absolute top-[3.75rem] left-[4.5rem]"
-        size={100}
-      />
+      <PiSwatches className=" fill-cyan-50 absolute top-5 left-9" size={80} />
     ),
   },
   {
     title: "Music",
     img: "/category/category_img_3.png",
     icon: (
-      <PiMusicNotes
-        className=" fill-cyan-50 absolute top-[3.75rem] left-[4.5rem]"
-        size={100}
-      />
+      <PiMusicNotes className=" fill-cyan-50 absolute top-5 left-9" size={80} />
     ),
   },
   {
     title: "Photography",
     img: "/category/category_img_4.png",
     icon: (
-      <PiCamera
-        className=" fill-cyan-50 absolute top-[3.75rem] left-[4.5rem]"
-        size={100}
-      />
+      <PiCamera className=" fill-cyan-50 absolute top-5 left-9" size={80} />
     ),
   },
   {
@@ -57,8 +45,8 @@ const categories = [
     img: "/category/category_img_5.png",
     icon: (
       <PiVideoCamera
-        className=" fill-cyan-50 absolute top-[3.75rem] left-[4.5rem]"
-        size={100}
+        className=" fill-cyan-50 absolute top-5 left-9"
+        size={80}
       />
     ),
   },
@@ -66,30 +54,21 @@ const categories = [
     title: "Utility",
     img: "/category/category_img_6.png",
     icon: (
-      <PiMagicWand
-        className=" fill-cyan-50 absolute top-[3.75rem] left-[4.5rem]"
-        size={100}
-      />
+      <PiMagicWand className=" fill-cyan-50 absolute top-5 left-9" size={80} />
     ),
   },
   {
     title: "Sport",
     img: "/category/category_img_7.png",
     icon: (
-      <PiBasketball
-        className=" fill-cyan-50 absolute top-[3.75rem] left-[4.5rem]"
-        size={100}
-      />
+      <PiBasketball className=" fill-cyan-50 absolute top-5 left-9" size={80} />
     ),
   },
   {
     title: "Virtual Worlds",
     img: "/category/category_img_8.png",
     icon: (
-      <PiPlanet
-        className=" fill-cyan-50 absolute top-[3.75rem] left-[4.5rem]"
-        size={100}
-      />
+      <PiPlanet className=" fill-cyan-50 absolute top-5 left-9" size={80} />
     ),
   },
 ];
@@ -97,13 +76,13 @@ const categories = [
 const Categories = () => {
   return (
     <section className="py-20">
-      <div className="container max-w-[72rem]">
-        <div className="text-cyan-50">
-          <h1 className="text-3xl font-semibold text-left">
+      <div className="max-w-[72rem]">
+        <div className="pl-8 text-cyan-50">
+          <h1 className="text-2xl font-semibold text-left">
             Browse Categories
           </h1>
         </div>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="py-4 grid grid-cols-2 gap-3 place-items-center">
           {categories.map((category, id) => (
             <CategoryCard
               key={id}

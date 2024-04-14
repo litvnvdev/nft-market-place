@@ -17,8 +17,8 @@ export default function Home() {
         <Hero />
         <TrendingCollection />
         <TopCreators />
-        {/* <Categories />
-        <DiscoverNFTs /> */}
+         <Categories />
+       {/* <DiscoverNFTs /> */}
       </main>
       {/* <NFTHighlight />
       <HowItWorks />

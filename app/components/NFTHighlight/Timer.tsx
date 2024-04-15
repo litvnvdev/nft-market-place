@@ -20,7 +20,7 @@ const Timer = () => {
   }, []);
   
   return (
-    <div className="flex flex-col items-center bg-zinc-900 bg-opacity-45 rounded-2xl py-14 px-8">
+    <div className="w-full flex flex-col items-center bg-zinc-900 bg-opacity-45 rounded-2xl py-14 px-8">
       <p className={`${spaceMono.className} self-start`}>Auction ends in:</p>
       <div
         className={`${spaceMonoBold.className} mt-4 grid grid-cols-5 gap-4 text-4xl font-bold place-items-center`}

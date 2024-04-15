@@ -18,10 +18,10 @@ export default function Home() {
         <TrendingCollection />
         <TopCreators />
          <Categories />
-       {/* <DiscoverNFTs /> */}
+        <DiscoverNFTs />
       </main>
-      {/* <NFTHighlight />
-      <HowItWorks />
+      <NFTHighlight />
+       {/* <HowItWorks />
       <Subscribe /> */}
       <Footer />
     </>

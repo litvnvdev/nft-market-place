@@ -9,7 +9,7 @@ type NftArtist = {
 
 const NFTArtist = ({ name, artist_img, width, height }: NftArtist) => {
   return (
-    <div className="mt-2 flex items-center justify-center gap-3 text-cyan-50">
+    <div className="flex items-center justify-center gap-3 text-cyan-50">
       <Image
         src={artist_img}
         alt="artist"

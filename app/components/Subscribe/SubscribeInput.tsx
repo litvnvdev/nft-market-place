@@ -12,15 +12,15 @@ const SubscribeInput = ({margint}:InputProps) => {
     setText(event.target.value);
   };
   return (
-    <div className={`${margint || 'mt-12'} relative w-full`}>
+    <div className={`${margint || 'mt-12'} w-full flex flex-col gap-4`}>
       <input
         onChange={handleInput}
-        className=" text-zinc-950 rounded-2xl w-3/4 py-4 px-5 focus:outline-none"
+        className=" text-zinc-950 rounded-3xl py-2 px-5 focus:outline-none placeholder:text-zinc-900"
         type="text"
         value={text}
         placeholder="Enter your email here"
       />
-      <button className="flex gap-3 justify-center items-center px-10 py-4 text-cyan-50 absolute right-0 top-0 bg-violet-500 duration-300 hover:bg-violet-600 rounded-2xl">
+      <button className="flex gap-3 justify-center items-center font-semibold px-10 py-2 text-cyan-50 bg-violet-500 duration-300 hover:bg-violet-600 rounded-3xl">
         <IoMailOutline size={20}/>
         Subscribe
       </button>

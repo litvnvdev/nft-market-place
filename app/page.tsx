@@ -17,12 +17,12 @@ export default function Home() {
         <Hero />
         <TrendingCollection />
         <TopCreators />
-         <Categories />
+        <Categories />
         <DiscoverNFTs />
       </main>
       <NFTHighlight />
-       {/* <HowItWorks />
-      <Subscribe /> */}
+      <HowItWorks />
+      <Subscribe />
       <Footer />
     </>
   );

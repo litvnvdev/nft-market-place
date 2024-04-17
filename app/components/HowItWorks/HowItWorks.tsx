@@ -3,13 +3,13 @@ import { HowItWorksData } from "@/app/data";
 
 const HowItWorks = () => {
   return (
-    <section className="py-28">
+    <section className="mt-20">
       <div className="container px-8">
-        <div className="flex flex-col items-start sm:items-center gap-4 text-cyan-50 justify-start">
+        <div className="flex flex-col  items-start sm:items-center md:items-start gap-4 text-cyan-50 justify-start">
           <h1 className="text-2xl font-semibold">How It Works</h1>
           <h3 className="text-lg">Find out how to get started</h3>
         </div>
-        <div className="mt-12 flex flex-col items-center gap-8 w-full">
+        <div className="border mt-12 flex flex-col md:grid md:grid-cols-3 items-center gap-8 w-full">
           {HowItWorksData.map(({ title, text, id, icon }) => (
             <HowItWorksCard key={id} title={title} text={text} icon={icon} />
           ))}

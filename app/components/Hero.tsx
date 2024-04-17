@@ -9,12 +9,13 @@ const spaceMono = Space_Mono({ weight: "700", subsets: ["latin"] });
 
 const Hero = () => {
   return (
-    <section className="h-dvh pt-12">
-      <div className="container text-cyan-50 flex flex-col justify-center">
+    <section className="h-dvh md:h-1/2 pt-12">
+      <div className=" container text-cyan-50 flex md:flex-row flex-col justify-center">
         <div
-          className={`${workSans.className} flex flex-col lg:max-w-[72rem] md:max-w-80 items-center gap-8 max-w-[25rem] px-8 mx-auto `}
+          className={`${workSans.className} flex flex-col md:flex-row lg:max-w-[72rem] md:max-w-[72rem] items-center gap-8 max-w-[25rem] px-8 mx-auto `}
         >
-          <div className="order-1 flex flex-col gap-4 w-full">
+          <div className="md:self-start md:flex md:flex-col md:gap-10 md:py-4">
+          <div className="order-1 flex flex-col gap-4  w-full">
             <h1 className="lg:text-6xl md:text-4xl  text-2xl text-left font-semibold max-w-80">
               Discover digital art & Collect NFTs
             </h1>
@@ -24,12 +25,12 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="w-full order-3 flex flex-col items-center gap-8 justify-center">
+          <div className="w-full md:w-3/4 order-3 flex flex-col items-center md:order-2 gap-8 justify-center">
             <PrimaryButton>
               <MdOutlineRocketLaunch size={20} />
               Get started
             </PrimaryButton>
-            <div className="w-full flex justify-between flex-wrap">
+            <div className=" md:h-32 w-full flex justify-between flex-wrap content-end ">
               <p>
                 <strong
                   className={`${spaceMono.className} lg:text-2xl md:text-xl`}
@@ -58,6 +59,7 @@ const Hero = () => {
                 Artists
               </p>
             </div>
+          </div>
           </div>
           <HeroCard />
         </div>

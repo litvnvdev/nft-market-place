@@ -23,9 +23,9 @@ type CategoryCard = {
 
 const CategoryCard = ({ icon, title, category_img }:CategoryCard) => {
   return (
-    <div className="flex flex-col justify-center items-center max-w-60 my-12">
+    <div className="flex flex-col justify-center items-center max-w-60 md:w-full my-12">
       <div
-        className="w-40 h-36  bg-no-repeat bg-cover bg-center rounded-2xl"
+        className="w-40 h-36 bg-no-repeat bg-cover bg-center rounded-2xl"
         style={{ backgroundImage: `url(${category_img})` }}
       >
         <div className="relative w-full h-36 backdrop-blur-sm rounded-2xl">

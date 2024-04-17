@@ -23,7 +23,7 @@ const CollectionCard = ({
   return (
     <div className="flex flex-col mt-12">
       <div
-        className="w-full h-[20rem] bg-center bg-no-repeat rounded-xl"
+        className="w-full h-[20rem] md:h-[18rem] bg-center bg-no-repeat rounded-xl"
         style={{
           backgroundImage: `url(${img})`,
           backgroundSize: "calc(min(500px, 22rem)",
@@ -32,20 +32,20 @@ const CollectionCard = ({
 
       <div className="w-full flex justify-center gap-4 mt-5 items-center flex-wrap">
         <div
-          className="w-24 h-24 bg-center bg-cover bg-no-repeat rounded-2xl"
+          className="w-24 h-24 md:w-14 md:h-14 bg-center bg-cover bg-no-repeat rounded-2xl"
           style={{
             backgroundImage: `url(${img_sec})`,
             backgroundSize: "calc(min(500px, 100%))",
           }}
         ></div>
         <div
-          className="w-24 h-24 bg-center bg-cover bg-no-repeat rounded-2xl"
+          className="w-24 h-24 md:w-14 md:h-14 bg-center bg-cover bg-no-repeat rounded-2xl"
           style={{
             backgroundImage: `url(${img_th})`,
             backgroundSize: "calc(min(500px, 100%))",
           }}
         ></div>
-        <div className="w-24 h-24 rounded-2xl flex justify-center items-center text-cyan-50 text-lg bg-violet-400 text-center">
+        <div className="w-24 h-24 md:w-14 md:h-14 rounded-2xl flex justify-center items-center text-cyan-50 text-lg bg-violet-400 text-center">
           <p className={`${spaceMono.className} `}>1025+</p>
         </div>
       </div>

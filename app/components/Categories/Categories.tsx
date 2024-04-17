@@ -75,14 +75,14 @@ const categories = [
 
 const Categories = () => {
   return (
-    <section className="py-20">
-      <div className="max-w-[72rem]">
-        <div className="pl-8 text-cyan-50">
+    <section className="my-20 md:px-8">
+      <div className="max-w-[72rem] mx-auto">
+        <div className="pl-8 md:pl-0 text-cyan-50">
           <h1 className="text-2xl font-semibold text-left">
             Browse Categories
           </h1>
         </div>
-        <div className="py-4 grid grid-cols-2 gap-3 place-items-center">
+        <div className="py-4 grid grid-cols-2 gap-3 place-items-center md:grid-cols-4">
           {categories.map((category, id) => (
             <CategoryCard
               key={id}

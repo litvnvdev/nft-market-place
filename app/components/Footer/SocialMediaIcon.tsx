@@ -4,7 +4,7 @@ type Props = {
 
 const SocialMediaIcon = ({ icon }: Props) => {
   return (
-    <a className="group hover:translate-y-1 duration-300" href="#">
+    <a className="group lg:hover:translate-y-1 duration-300" href="#" target="_blank">
       {icon}
     </a>
   );

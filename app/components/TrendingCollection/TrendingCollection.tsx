@@ -4,7 +4,7 @@ import { collectionData } from "@/app/data";
 const TrendingCollection = () => {
   return (
     <section className="my-20 mx-auto px-8 w-full lg:h-[46rem] lg:my-0">
-      <div className="lg:max-w-[52rem] items-center lg:items-start container flex flex-col">
+      <div className="lg:max-w-[80rem] items-center lg:items-start container flex flex-col">
         <div className="max-w-[20rem] lg:max-w-[30rem] text-justify text-cyan-50 md:self-start">
           <h1 className="text-3xl font-semibold">Trending Collection</h1>
           <h3 className="text-lg mt-3">

@@ -39,7 +39,7 @@ const TopCreatorsCard = ({ name, image, id }: CreatorCard) => {
           </div>
         </div>
       ) : (
-        <div className=" relative w-60 h-60 bg-zinc-700 rounded-2xl mt-10 flex flex-col items-center">
+        <div className="mt-6 relative w-11/12 h-64 bg-zinc-700 rounded-2xl  flex flex-col items-center">
           <div
             className={`${spaceMono.className} flex items-center justify-center absolute  top-4 left-4 rounded-full bg-zinc-800 w-6 h-6 text-zinc-500 text-sm text-center`}
           >

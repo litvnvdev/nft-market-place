@@ -23,14 +23,14 @@ type CategoryCard = {
 
 const CategoryCard = ({ icon, title, category_img }:CategoryCard) => {
   return (
-    <div className="flex flex-col justify-center items-center max-w-60 md:w-full my-12">
+    <div className="flex flex-col justify-center items-center max-w-60 lg:max-w-[20rem] md:w-full my-8 lg:items-start">
       <div
-        className="w-40 h-36 bg-no-repeat bg-cover bg-center rounded-2xl"
+        className="w-40 h-36 lg:w-11/12 lg:h-fit bg-no-repeat bg-cover bg-center rounded-t-2xl"
         style={{ backgroundImage: `url(${category_img})` }}
       >
-        <div className="relative w-full h-36 backdrop-blur-sm rounded-2xl">
+        <div className="relative w-full h-36 lg:h-64 backdrop-blur-sm rounded-t-2xl">
           {icon}
-          <div className="py-6 pl-4 self-start rounded-b-2xl bg-zinc-600 w-40 absolute top-32">
+          <div className="py-6 pl-4 self-start rounded-b-2xl bg-zinc-600 w-40 lg:w-full absolute top-32 lg:top-56">
             <p className="text-cyan-50 text-left">{title}</p>
           </div>
         </div>

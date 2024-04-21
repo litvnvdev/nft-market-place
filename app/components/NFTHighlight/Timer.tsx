@@ -18,18 +18,22 @@ const Timer = () => {
       });
     }, 1000);
   }, []);
-  
+
   return (
     <div className="w-full md:w-10/12 flex flex-col items-center bg-zinc-900 bg-opacity-45 rounded-2xl py-14 px-8 md:order-3">
-      <p className={`${spaceMono.className} self-start`}>Auction ends in:</p>
-      <div
-        className={`${spaceMonoBold.className} mt-4 grid grid-cols-5 gap-4 text-4xl font-bold place-items-center`}
-      >
-        <p>{Math.floor(time / 3600)}</p>
-        <p>:</p>
-        <p>{Math.floor((time % 3600) / 60)}</p>
-        <p>:</p>
-        <p>{Math.floor(time % 60)}</p>
+      <div className="max-w-96">
+        <p className={`${spaceMono.className}`}>
+          Auction ends in:
+        </p>
+        <div
+          className={`${spaceMonoBold.className} mt-4 grid grid-cols-5 gap-4 text-4xl font-bold place-items-center`}
+        >
+          <p>{Math.floor(time / 3600)}</p>
+          <p>:</p>
+          <p>{Math.floor((time % 3600) / 60)}</p>
+          <p>:</p>
+          <p>{Math.floor(time % 60)}</p>
+        </div>
       </div>
       <div
         className={`${spaceMono.className} mt-2 grid grid-cols-3 gap-16 text-xs place-items-center`}

@@ -9,13 +9,13 @@ const spaceMono = Space_Mono({ weight: "700", subsets: ["latin"] });
 
 const Hero = () => {
   return (
-    <section className="h-dvh md:h-1/2 pt-12 lg:h-[46rem] lg:flex lg:flex-col lg:content-center">
-      <div className=" container text-cyan-50 flex md:flex-row flex-col justify-center">
+    <section className="h-1/2 md:h-1/2 pt-12 lg:h-[46rem] px-8">
+      <div className="container text-cyan-50 flex md:flex-row lg:flex-col flex-col justify-center lg:max-w-[80rem] lg:items-start">
         <div
-          className={`${workSans.className} flex flex-col md:flex-row md:max-w-[72rem] lg:items-start items-center gap-8 lg:gap-12 max-w-[25rem] px-8 lg:px-0 mx-auto `}
+          className={`${workSans.className} flex flex-col md:flex-row md:max-w-[72rem] max-w-[25rem] lg:w-full lg:max-w-full lg:items-start lg:justify-between items-center gap-8 px-8 lg:px-0 mx-auto lg:mx-0`}
         >
           <div className="md:self-start md:flex md:flex-col md:gap-10 lg:gap-6 md:py-4 lg:py-0">
-            <div className="order-1 flex flex-col gap-4  w-full lg:max-w-[40rem]">
+            <div className="order-1 flex flex-col gap-4 w-full">
               <h1 className="lg:text-6xl md:text-4xl  text-2xl text-left font-semibold max-w-80">
                 Discover digital art & Collect NFTs
               </h1>
@@ -25,12 +25,12 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="w-full md:w-3/4 order-3 flex flex-col items-center md:order-2 gap-8 justify-center lg:w-full">
+            <div className="w-full md:w-3/4 order-3 flex flex-col items-center lg:items-start md:order-2 gap-8 justify-center lg:justify-end lg:w-full lg:h-[10.6rem]">
               <PrimaryButton>
                 <MdOutlineRocketLaunch size={20} />
                 Get started
               </PrimaryButton>
-              <div className=" md:h-32 lg:h-fit w-full flex justify-between flex-wrap content-end lg:content-start ">
+              <div className="md:h-32 lg:h-fit w-full lg:max-w-[22rem] flex justify-between flex-wrap content-end">
                 <p>
                   <strong
                     className={`${spaceMono.className} lg:text-2xl md:text-xl`}
@@ -61,7 +61,9 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <HeroCard />
+          <div className="lg:w-full md:w-[22rem]">
+            <HeroCard />
+          </div>
         </div>
 
         {/* <Image src={Hero_img} alt="hero img" width={510} height={401} className=""/> */}

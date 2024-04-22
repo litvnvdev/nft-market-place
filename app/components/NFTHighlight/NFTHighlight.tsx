@@ -7,7 +7,7 @@ const NFTHighlight = () => {
   return (
     <section className="mt-56 md:mt-20  w-full h-dvh lg:h-[52rem] bg-[url(/NFT_highlight.png)] bg-no-repeat bg-center bg-cover">
       <div className="w-full h-full bg-gradient-to-b from-transparent to-violet-500">
-        <div className="max-w-[72rem] md:px-8 lg:px-0 container h-full lg:h-5/6 flex justify-center md:justify-between text-cyan-50 items-end pb-40 lg:max-w-[80rem]">
+        <div className="max-w-[72rem] md:px-8 container h-full lg:h-5/6 flex justify-center md:justify-between text-cyan-50 items-end pb-40 lg:max-w-[80rem]">
           <div className="flex flex-col md:flex-row gap-8 px-4 md:px-0 mx-auto lg:mx-0 lg:justify-between lg:w-full">
             <div className="flex flex-col gap-4 md:gap-8 md:w-full">
               <button className="flex items-center justify-center bg-zinc-600 py-2 rounded-full w-36 hover:bg-zinc-500 duration-300">

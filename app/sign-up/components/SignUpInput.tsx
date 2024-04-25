@@ -1,10 +1,10 @@
-type SingUpInputProps = {
+type SignUpInputProps = {
   icon: React.ReactNode;
   text: string;
   type: string;
 };
 
-export function SingUpInput({ icon, text, type }: SingUpInputProps) {
+export function SignUpInput({ icon, text, type }: SignUpInputProps) {
   return (
     <div className="w-full flex pl-2 items-center bg-white rounded-3xl ">
       <span className="text-zinc-400">{icon}</span>

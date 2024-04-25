@@ -4,7 +4,7 @@ import { FaRegUser } from "react-icons/fa";
 import { MdOutlineEmail, MdLock } from "react-icons/md";
 
 import Navbar from "../components/Navbar";
-import { SingUpInput } from "./components/SingUpInput";
+import { SignUpInput } from "./components/SignUpInput";
 import Footer from "../components/Footer/Footer";
 
 const arrIcons = [
@@ -34,7 +34,7 @@ const arrIcons = [
   },
 ];
 
-export default function SingUp() {
+export default function SignUp() {
   return (
     <>
       <Navbar />
@@ -56,7 +56,7 @@ export default function SingUp() {
               action=""
             >
               {arrIcons.map((item) => (
-                <SingUpInput
+                <SignUpInput
                   key={item.id}
                   icon={item.icon}
                   text={item.text}

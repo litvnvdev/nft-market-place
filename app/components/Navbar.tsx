@@ -40,7 +40,7 @@ const Navbar = () => {
             ))}
             <PrimaryButton>
               <FaRegUser size={20} />
-              Sing Up
+              Sign Up
             </PrimaryButton>
           </ul>
         </nav>

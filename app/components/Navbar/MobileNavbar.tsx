@@ -57,7 +57,7 @@ const MobileNavbar = () => {
         </button>
       </div>
       {isOpen && (
-        <div className="z-10 top-8 right-0 absolute w-fit md:w-1/2 px-8 py-6 mt-2 h-dvh md:py-0 flex flex-col items-end rounded-b-xl backdrop-blur-lg">
+        <div className="z-20 top-8 right-0 absolute w-fit md:w-1/2 px-8 py-6 mt-2 h-dvh md:py-0 flex flex-col items-end rounded-b-xl backdrop-blur-lg">
           <ul className="mr-6 flex flex-col  items-center gap-6 text-cyan-50">
             {navBarItems.map((item, id) => (
               <li>{item}</li>

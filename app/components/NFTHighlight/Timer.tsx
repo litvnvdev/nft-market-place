@@ -1,11 +1,15 @@
 "use client";
 import { Space_Mono } from "next/font/google";
 import { useState, useEffect } from "react";
+import PrimaryButton from "../PrimaryButton";
 
+type TimerProps = {
+  button?: boolean;
+};
 const spaceMono = Space_Mono({ weight: "400", subsets: ["latin"] });
 const spaceMonoBold = Space_Mono({ weight: "700", subsets: ["latin"] });
 
-const Timer = () => {
+const Timer = ({ button }: TimerProps) => {
   const [time, setTime] = useState(216000);
 
   useEffect(() => {
@@ -20,11 +24,9 @@ const Timer = () => {
   }, []);
 
   return (
-    <div className="w-full md:w-10/12 flex flex-col items-center bg-zinc-900 bg-opacity-45 rounded-2xl py-14 px-8 md:order-3">
-      <div className="max-w-96">
-        <p className={`${spaceMono.className}`}>
-          Auction ends in:
-        </p>
+    <div className="w-full md:w-10/12 flex flex-col gap-4 items-center bg-neutral-500 bg-opacity-60 rounded-2xl py-14 px-8 md:order-3 text-cyan-50">
+      <div className="flex flex-col max-w-96">
+        <p className={`${spaceMono.className}`}>Auction ends in:</p>
         <div
           className={`${spaceMonoBold.className} mt-4 grid grid-cols-5 gap-4 text-4xl font-bold place-items-center`}
         >
@@ -34,13 +36,15 @@ const Timer = () => {
           <p>:</p>
           <p>{Math.floor(time % 60)}</p>
         </div>
-      </div>
-      <div
-        className={`${spaceMono.className} mt-2 grid grid-cols-3 gap-16 text-xs place-items-center`}
-      >
-        <p>Hours</p>
-        <p>Minutes</p>
-        <p>Seconds</p>
+
+        <div
+          className={`${spaceMono.className} mt-2 grid grid-cols-3 gap-16 text-xs place-items-center`}
+        >
+          <p>Hours</p>
+          <p>Minutes</p>
+          <p>Seconds</p>
+        </div>
+        {button && <div className="w-full mt-6"><PrimaryButton>Place bid</PrimaryButton></div>}
       </div>
     </div>
   );

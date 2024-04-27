@@ -19,7 +19,7 @@ const socialIcons = [
 const Footer = () => {
   const navBarItems = ["Marketplace", "Rankings", "Connect a wallet"];
   return (
-    <footer className="py-8 bg-neutral-700 w-full px-8 border-2 border-t-zinc-800">
+    <footer className="py-8 bg-neutral-700 w-full px-8 md:border-0 border-t-2 border-t-zinc-800">
       <div className="flex flex-col lg:flex-row px-8 lg:px-0 lg:max-w-[80rem] lg:justify-between gap-3 container">
         <div className="flex flex-col gap-4 text-neutral-400">
           <div className="flex gap-2 text-cyan-50 cursor-pointer">

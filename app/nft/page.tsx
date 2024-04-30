@@ -20,11 +20,11 @@ export default function NftPage() {
       <Navbar />
 
       <section className="w-full h-fit pt-2">
-        <div className="bg-[url('/nft-bg.png')] bg-cover bg-no-repeat h-80 w-screen"></div>
+        <div className="bg-[url('/nft-bg.png')] bg-cover bg-center bg-no-repeat h-80 lg:h-[32rem] lg:w-full w-screen"></div>
       </section>
 
-      <section className=" flex flex-col px-8 py-2 sm:relative">
-        <div className="flex flex-col gap-4 sm:flex-row sm:justify-between sm:order-1">
+      <section className=" flex flex-col px-8 py-2 sm:relative lg:max-w-[90%] lg:mx-auto ">
+        <div className="flex flex-col gap-4 sm:flex-row sm:justify-between sm:order-1 ">
           <div>
             <h1 className="text-2xl font-semibold text-cyan-50">
               The Orbitians
@@ -86,7 +86,7 @@ export default function NftPage() {
       </section>
 
       <section className="px-8 mt-8 mb-12">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 lg:max-w-[90%] lg:mx-auto">
           <h1 className="sm:order-1 text-2xl text-cyan-50 font-semibold">
             More From This Artist
           </h1>

@@ -13,6 +13,7 @@ import SecondaryButton from "../components/SecondaryButton";
 import SocialMediaIcon from "../components/Footer/SocialMediaIcon";
 import { NFTsCardData } from "../data";
 import NFTCard from "../components/DiscoverNFTs/NFTCard";
+import FilterButton from "../components/FilterButton";
 
 const socialIcons = [
   <RxDiscordLogo
@@ -96,15 +97,7 @@ export default function ArtistPage() {
         <div className="flex flex-col items-center bg-zinc-800 ">
           <ul className="lg:max-w-[80rem] flex gap-6  text-neutral-500 font-medium  bg-zinc-800 w-full place-content-center sm:place-content-stretch sm:justify-between sm:px-8  h-20">
             {filter.map((item, id) => (
-              <li
-                key={id}
-                className="font-semibold w-24 sm:w-36 flex justify-center sm:gap-4 items-center cursor-pointer hover:border-b-2  text-neutral-500 hover:text-cyan-50 hover:border-b-neutral-500"
-              >
-                {item}
-                <span className="text-sm hidden sm:block px-2 rounded-xl bg-neutral-700">
-                  302
-                </span>
-              </li>
+              <FilterButton item={item} num={302} key={id} />
             ))}
           </ul>
         </div>

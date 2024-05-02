@@ -1,6 +1,6 @@
 type FilterButtonProps = {
   item: string;
-  num: number;
+  num?: number;
 };
 
 const FilterButton = ({ item, num }: FilterButtonProps) => {

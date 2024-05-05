@@ -2,6 +2,7 @@ import { FaRegEye } from "react-icons/fa";
 
 import Timer from "./Timer";
 import NFTArtist from "../NFTArtist";
+import Link from "next/link";
 
 const NFTHighlight = () => {
   return (
@@ -19,13 +20,15 @@ const NFTHighlight = () => {
                 />
               </button>
               <h1 className="text-4xl font-semibold">Magic Mashrooms</h1>
-              <button className="md:order-2 w-full group flex gap-3 items-center justify-center bg-cyan-50 duration-300 hover:bg-zinc-400 hover:text-cyan-50 text-black py-5 px-5 rounded-3xl font-semibold lg:max-w-80">
-                <FaRegEye
-                  size={20}
-                  className="group-hover:fill-cyan-50 fill-violet-500"
-                />
-                See NFT
-              </button>
+              <Link href="/nft">
+                <button className="md:order-2 w-full group flex gap-3 items-center justify-center bg-cyan-50 duration-300 hover:bg-zinc-400 hover:text-cyan-50 text-black py-5 px-5 rounded-3xl font-semibold lg:max-w-80">
+                  <FaRegEye
+                    size={20}
+                    className="group-hover:fill-cyan-50 fill-violet-500"
+                  />
+                  See NFT
+                </button>
+              </Link>
             </div>
             <Timer />
           </div>

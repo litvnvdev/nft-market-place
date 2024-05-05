@@ -10,6 +10,7 @@ import { Tag } from "./components/Tag";
 import { NFTsCardData } from "@/app/data";
 import NFTCard from "../components/DiscoverNFTs/NFTCard";
 import SecondaryButton from "../components/SecondaryButton";
+import Link from "next/link";
 
 const { name, img } = artistData[0];
 const tags = ["Animation", "Illustration", "Moon", "Space"];
@@ -90,12 +91,13 @@ export default function NftPage() {
           <h1 className="sm:order-1 text-2xl text-cyan-50 font-semibold">
             More From This Artist
           </h1>
+          <Link href='/artist'>
           <div className="order-3 sm:order-2 sm:max-w-64">
             <SecondaryButton>
               <FaArrowRightLong className="text-violet-500" /> Go To Artist Page
             </SecondaryButton>
           </div>
-
+          </Link>
           <div className="order-2 mt-6 grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-x-8 md:gap-y-16 place-items-center mb-10 lg:flex lg:justify-between">
             {NFTsCardData.map(
               ({ id, artist_img, artist_name, title, nft_img, price }) => (

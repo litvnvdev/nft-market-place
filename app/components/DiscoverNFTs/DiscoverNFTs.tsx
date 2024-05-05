@@ -3,6 +3,7 @@ import { FaRegEye } from "react-icons/fa";
 import { NFTsCardData } from "@/app/data";
 import SecondaryButton from "../SecondaryButton";
 import NFTCard from "./NFTCard";
+import Link from "next/link";
 
 const DiscoverNFTs = () => {
   return (
@@ -30,13 +31,15 @@ const DiscoverNFTs = () => {
             )}
           </div>
           <div className="md:order-2">
-          <SecondaryButton>
-            <FaRegEye
-              size={20}
-              className="fill-violet-500 group-hover:fill-cyan-50 duration-300"
-            />
-            See all
-          </SecondaryButton>
+            <Link href="/marketplace">
+              <SecondaryButton>
+                <FaRegEye
+                  size={20}
+                  className="fill-violet-500 group-hover:fill-cyan-50 duration-300"
+                />
+                See all
+              </SecondaryButton>
+            </Link>
           </div>
         </div>
       </div>

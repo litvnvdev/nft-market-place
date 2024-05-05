@@ -3,6 +3,7 @@ import { MdOutlineRocketLaunch } from "react-icons/md";
 import { artistData } from "../../data";
 import SecondaryButton from "../SecondaryButton";
 import TopCreatorsCard from "./TopCreatorsCard";
+import Link from "next/link";
 
 const TopCreators = () => {
   return (
@@ -16,6 +17,7 @@ const TopCreators = () => {
             </h3>
           </div>
           <div className="mr-6">
+            <Link href='/rankings'>
           <SecondaryButton>
             <MdOutlineRocketLaunch
               size={20}
@@ -23,6 +25,7 @@ const TopCreators = () => {
             />
             View Rankings
           </SecondaryButton>
+          </Link>
           </div>
         </div>
         <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:place-items-start md:gap-4 lg:gap-2 pt-2 md:mt-4 place-items-center">

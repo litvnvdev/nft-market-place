@@ -9,6 +9,7 @@ import { FaRegUser } from "react-icons/fa";
 import { Work_Sans, Space_Mono } from "next/font/google";
 import { useState } from "react";
 import SocialMediaIcon from "../Footer/SocialMediaIcon";
+import Link from "next/link";
 
 const spaceMono = Space_Mono({ weight: "700", subsets: ["latin"] });
 const navBarItems = ["Marketplace", "Rankings", "Connect a wallet"];
@@ -41,13 +42,15 @@ const MobileNavbar = () => {
   return (
     <>
       <div className="w-full relative flex justify-between mt-2 px-4">
-        <div className="max-w-44 flex gap-2 items-center cursor-pointer">
+        <div className="max-w-44  cursor-pointer">
+          <Link className="flex gap-2 items-center" href='/'>
           <Image src="/logo.svg" alt="logo" width={32} height={32} />
           <span
             className={`${spaceMono.className} text-cyan-50 hover:text-violet-400 duration-300 text-sm`}
           >
             NFT Marketplace
           </span>
+          </Link>
         </div>
         <button
           className="absolute right-4 top-0 text-cyan-50"
@@ -60,11 +63,14 @@ const MobileNavbar = () => {
         <div className="z-20 top-8 right-0 absolute w-fit md:w-1/2 px-8 py-6 mt-2 h-dvh md:py-0 flex flex-col items-end rounded-b-xl backdrop-blur-lg">
           <ul className="mr-6 flex flex-col  items-center gap-6 text-cyan-50">
             {navBarItems.map((item, id) => (
-              <li>{item}</li>
+              
+              <li><Link href={`/${item.toLocaleLowerCase()}`}>{item}</Link></li>
             ))}
-            <button className="w-full flex items-center gap-2 font-semibold bg-violet-500 px-6 py-2 rounded-xl">
+            <button className="w-full  font-semibold bg-violet-500 px-6 py-2 rounded-xl">
+              <Link className="flex items-center gap-2" href='/sign-up'>
               <FaRegUser size={18} />
               Sign Up
+              </Link>
             </button>
             <div className="group flex gap-2 mt-4">
               {socialIcons.map((icon, id) => (

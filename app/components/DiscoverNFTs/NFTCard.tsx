@@ -1,5 +1,6 @@
 import { Space_Mono } from "next/font/google";
 import NFTArtist from "../NFTArtist";
+import Link from "next/link";
 
 type NFTCardProps = {
   nft_img: string;
@@ -7,11 +8,19 @@ type NFTCardProps = {
   artist_img: string;
   title: string;
   price: number;
+  route: number;
 };
 
 const spaceMono = Space_Mono({ weight: "400", subsets: ["latin"] });
 
-const NFTCard = ({ nft_img, artist_name, artist_img, title, price }:NFTCardProps) => {
+const NFTCard = ({
+  route,
+  nft_img,
+  artist_name,
+  artist_img,
+  title,
+  price,
+}: NFTCardProps) => {
   return (
     <div className="mb-4 w-full flex flex-col h-96 text-cyan-50 relative">
       <div
@@ -34,10 +43,13 @@ const NFTCard = ({ nft_img, artist_name, artist_img, title, price }:NFTCardProps
           >
             <p>price</p> <p>Highest bid</p>
           </div>
-          <div className={`${spaceMono.className} flex justify-between text-sm`}>
+          <div
+            className={`${spaceMono.className} flex justify-between text-sm`}
+          >
             <p>{price} ETH</p>
             <p>0.33 wETH</p>
           </div>
+          <Link className='mt-4 text-cyan-400'href={`/nft/${route}`}>Click for route to NFT page</Link>
         </div>
       </div>
     </div>

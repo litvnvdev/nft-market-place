@@ -11,11 +11,12 @@ import { NFTsCardData } from "@/app/data";
 import NFTCard from "../components/DiscoverNFTs/NFTCard";
 import SecondaryButton from "../components/SecondaryButton";
 import Link from "next/link";
+import NftDetails from "./[nftId]/page";
 
 const { name, img } = artistData[0];
 const tags = ["Animation", "Illustration", "Moon", "Space"];
 
-export default function NftPage() {
+export default function NftPage({ params }: { params: { idNft: string } }) {
   return (
     <>
       <Navbar />
@@ -108,6 +109,7 @@ export default function NftPage() {
                   title={title}
                   nft_img={nft_img}
                   price={price}
+                  route={id}
                 />
               )
             )}

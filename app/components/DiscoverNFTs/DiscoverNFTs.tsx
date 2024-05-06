@@ -26,6 +26,7 @@ const DiscoverNFTs = () => {
                   title={title}
                   nft_img={nft_img}
                   price={price}
+                  route={id}
                 />
               )
             )}

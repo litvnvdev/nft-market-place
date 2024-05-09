@@ -38,7 +38,8 @@ export function NftDetails({ data, artistData }: NftDetailsProps) {
           <>
             <section className="w-full h-fit pt-2">
               <div
-                className={`bg-[url('/${data.img_bg}')] bg-cover bg-center bg-no-repeat h-80 lg:h-[32rem] lg:w-full w-screen`}
+              style={{backgroundImage:`url(${data.img_bg})`}}
+                className=' bg-cover bg-center bg-no-repeat h-80 lg:h-[32rem] lg:w-full w-screen'
               ></div>
             </section>
 

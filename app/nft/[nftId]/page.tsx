@@ -11,7 +11,9 @@ type Props = {
 };
 
 export default function NftPage({ params }: Props) {
-  const newNftData = nftPageData.find(
+  console.log(artistData[0].nft?.id);
+  
+  const newNftData = artistData.find(
     (data) => data.id.toString() === params.nftId
   );
   const newArtistData = artistData.find(
@@ -30,10 +32,10 @@ export default function NftPage({ params }: Props) {
     <>
       <Navbar />
       {newNftData && newArtistData && (
-        <NftDetails data={newNftData} artistData={newArtistData} />
+        <NftDetails data={newNftData} />
       )}
       <div className="flex items-center justify-center h-[60dvh]">
-        <h1 className="text-xl text-cyan-50">
+        <h1 className="text-2xl text-cyan-50 font-semibold">
           Error! NFT card does not exist. Try Again!
         </h1>
       </div>

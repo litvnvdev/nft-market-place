@@ -43,6 +43,7 @@ export default function MarketplacePage() {
                   title={title}
                   nft_img={nft_img}
                   price={price}
+                  route={id}
                 />
               )
             )}

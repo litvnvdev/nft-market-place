@@ -1,5 +1,3 @@
-
-
 import NFTArtist from "@/app/components/NFTArtist";
 import { NFTsCardData } from "@/app/data";
 import Navbar from "@/app/components/Navbar";
@@ -15,22 +13,23 @@ import { Tag } from "../../components/Tag";
 type NftDetailsProps = {
   data: {
     id: number;
-    title: string;
+    name: string;
+    img: string;
     description: string;
-    mintDate: string;
-    img_bg: string;
-    tags: string[]
-  };
+    wallet: string;
 
-  artistData: {
-    name: string,
-    img: string,
-  }
+    nft?: {
+      id: number;
+      title: string;
+      description: string;
+      mintDate: string;
+      img_bg: string;
+      tags: string[];
+    };
+  };
 };
 
-
-
-export function NftDetails({ data, artistData }: NftDetailsProps) {
+export function NftDetails({ data }: NftDetailsProps) {
   return (
     <>
       <main>
@@ -38,8 +37,8 @@ export function NftDetails({ data, artistData }: NftDetailsProps) {
           <>
             <section className="w-full h-fit pt-2">
               <div
-              style={{backgroundImage:`url(${data.img_bg})`}}
-                className=' bg-cover bg-center bg-no-repeat h-80 lg:h-[32rem] lg:w-full w-screen'
+                style={{ backgroundImage: `url(${data.nft?.img_bg})` }}
+                className=" bg-cover bg-center bg-no-repeat h-80 lg:h-[32rem] lg:w-full w-screen"
               ></div>
             </section>
 
@@ -47,9 +46,9 @@ export function NftDetails({ data, artistData }: NftDetailsProps) {
               <div className="flex flex-col gap-4 sm:flex-row sm:justify-between sm:order-1 ">
                 <div>
                   <h1 className="text-2xl font-semibold text-cyan-50">
-                    {data.title}
+                    {data.nft?.title}
                   </h1>
-                  <p className="text-neutral-500">{data.mintDate}</p>
+                  <p className="text-neutral-500">{data.nft?.mintDate}</p>
                 </div>
                 <div className="max-w-[28rem] sm:max-w-[18rem] sm:absolute top-3 right-2">
                   <Timer button />
@@ -59,11 +58,16 @@ export function NftDetails({ data, artistData }: NftDetailsProps) {
               <div className="sm:order-2">
                 <div className="mt-8 sm:mt-4 flex flex-col items-start gap-1">
                   <h3 className="text-neutral-500">Created by</h3>
-                  <NFTArtist name={artistData.name} artist_img={artistData.img} width={20} height={20} />
+                  <NFTArtist
+                    name={data.name}
+                    artist_img={data.img}
+                    width={20}
+                    height={20}
+                  />
                 </div>
                 <div className="mt-4 sm:w-1/2">
                   <h3 className="text-neutral-500">Description</h3>
-                  <p className="text-neutral-300">{data.description}</p>
+                  <p className="text-neutral-300">{data.nft?.description}</p>
                 </div>
 
                 <div className="mt-4 flex flex-col gap-2">
@@ -86,7 +90,7 @@ export function NftDetails({ data, artistData }: NftDetailsProps) {
 
                 <div className="flex flex-col gap-4 mt-6 w-3/4 items-start">
                   <h3 className="text-neutral-500">Tags</h3>
-                  {data.tags.map((tag, id):any => (
+                  {data.nft?.tags.map((tag, id): any => (
                     <Tag key={id + tag} tag={tag} />
                   ))}
                 </div>
@@ -98,7 +102,7 @@ export function NftDetails({ data, artistData }: NftDetailsProps) {
                 <h1 className="sm:order-1 text-2xl text-cyan-50 font-semibold">
                   More From This Artist
                 </h1>
-                <Link href="/artist">
+                <Link href={`/artist/${data.id}`}>
                   <div className="order-3 sm:order-2 sm:max-w-64">
                     <SecondaryButton>
                       <FaArrowRightLong className="text-violet-500" /> Go To

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 type MobileCreatorCardProps = {
   id: number;
   img: string;
@@ -17,7 +18,8 @@ const MobileCreatorCard = ({
   sold,
 }: MobileCreatorCardProps) => {
   return (
-    <div className="flex justify-between items-center bg-neutral-700 py-4 px-4 rounded-3xl">
+    <Link className="group" href={`/artist/${id}`}>
+    <div className="flex justify-between items-center bg-neutral-700 group-hover:bg-neutral-500 py-4 px-4 rounded-3xl duration-500">
       <div className="flex gap-3 items-center lg:justify-between">
         <div className="hidden lg:flex lg:place-content-center lg:bg-neutral-800 lg:w-6 lg:h-6 lg:rounded-full text-neutral-500">
           {id}
@@ -34,12 +36,13 @@ const MobileCreatorCard = ({
         />
         <h3 className="text-cyan-50 text-sm">{name}</h3>
       </div>
-      <div className="px-2 flex gap-12 md:justify-between items-center  md:w-4/12">
-        <p className="hidden sm:block lg:block text-green-500 lg:w-3/12">{change} %</p>
-        <p className="hidden lg:block text-neutral-300 lg:w-3/12">{sold}</p>
-        <p className="w-20 text-neutral-300 text-sm lg:w-3/12">{volume} ETH</p>
+      <div className="flex md:justify-between items-center  md:w-4/12">
+        <p className="hidden sm:block sm:mr-8 lg:block text-green-500 lg:w-fit">{change} %</p>
+        <p className="hidden lg:block text-neutral-300 lg:w-fit">{sold}</p>
+        <p className="w-20 text-neutral-300 text-sm lg:w-fit">{volume} ETH</p>
       </div>
     </div>
+    </Link>
   );
 };
 

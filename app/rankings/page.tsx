@@ -40,10 +40,10 @@ export default function RankingsPage() {
             <p>#</p>
             <p>Artist</p>
           </div>
-          <div className="px-2 flex gap-12 md:justify-between items-center md:w-4/12 md:text-sm">
-            <p className="hidden sm:block lg:w-3/12 w-3/12">Change</p>
-            <p className="hidden lg:block lg:w-3/12">NFTs sold</p>
-            <p className="w-20 lg:w-3/12">Volume</p>
+          <div className="flex md:justify-between items-center md:w-4/12 md:text-sm">
+            <button className="hidden sm:flex sm:mr-8 lg:w-fit  w-fit">Change</button>
+            <button className="hidden lg:flex lg:w-fit ">NFTs sold</button>
+            <button className="flex w-20 lg:w-fit">Volume</button>
           </div>
         </div>
         <div className=" flex flex-col gap-4 mb-8 lg:max-w-[90%] lg:mx-auto">

@@ -32,7 +32,7 @@ export function ArtistDetails ({icons, wallet,description,img, name}:Props){
             <h1 className="font-semibold text-2xl text-cyan-50 ">{name}</h1>
             <div className="flex flex-col gap-4 sm:w-3/4 md:w-1/2 items-center sm:flex-row lg:w-[20rem]">
               <PrimaryButton>
-                <PiCopyLight /> {wallet.substring(0,5) + '...' + wallet.substring(9,18)}
+                <PiCopyLight size={20} /> <p className="text-sm">{wallet.substring(0,4) + '...' + wallet.substring(wallet.length - 7)}</p>
               </PrimaryButton>
               <SecondaryButton>
                 <GoPlus className="text-violet-500 group-hover:text-cyan-50" />

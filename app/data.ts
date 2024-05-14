@@ -57,6 +57,15 @@ export const artistData = [
     description:
       "Artist who uses a unique combination of traditional painting techniques and modern technology to create stunning portraits",
     wallet: "abomgTr6Ikfa7xB4RX",
+    nft: {
+      id: 4,
+      title: "Space Exploration",
+      description:
+        "This unique NFT represents a collectible card featuring space exploration. The card depicts astronauts exploring the vastness of the universe and discovering new worlds. It is perfect for any NFT collection enthusiast who loves all things space!",
+      img_bg: "/NFts/nft_card_3.png",
+      tags: ["Animation", "Illustration", "Moon", "Space"],
+      mintDate: "Nov 26, 2023",
+    },
   },
   {
     id: 5,
@@ -65,7 +74,17 @@ export const artistData = [
     description:
       "Known for their intricate patterns and vivid colors, NFT artist’s that work is inspired by ancient cultures from around the world",
     wallet: "qOa8vUi1FJ64XCkZx8",
+    nft: {
+      id: 5,
+      title: "The Wildlife Conservation",
+      description:
+        "This special NFT showcases a collectible card focused on wildlife conservation. The card features various endangered animals, highlighting the importance of protecting our planet's biodiversity. It serves as a reminder to cherish and preserve nature's beauty.",
+      img_bg: "/NFts/nft_card_3.png",
+      tags: ["Animation", "Illustration", "Moon", "Space"],
+      mintDate: "Nov 30, 2021",
+    },
   },
+  
   {
     id: 6,
     name: "MrFox",
@@ -73,6 +92,15 @@ export const artistData = [
     description:
       "My passion is abstract paintings evoke powerful emotions through the use of bold shapes and striking contrasts",
     wallet: "4QsTAdxeFbePe3z68u",
+    nft: {
+      id: 6,
+      title: "The Fantasy Creatures",
+      description:
+        "This magical NFT offers a collectible card featuring fantasy creatures. The card illustrates mythical beings such as dragons, unicorns, and fairies, transporting you into a realm of enchantment and wonder. It's ideal for anyone who appreciates the whimsy and imagination of fantasy worlds.",
+      img_bg: "/NFts/nft_card_3.png",
+      tags: ["Animation", "Illustration", "Moon", "Space"],
+      mintDate: "April 16, 2023",
+    },
   },
   {
     id: 7,
@@ -81,6 +109,15 @@ export const artistData = [
     description:
       "Artist who takes inspiration from nature, creating serene landscapes that invite contemplation and reflection",
     wallet: "06cQde5uOddrSvQCnC",
+    nft: {
+      id: 7,
+      title: "The Magic Mushrooms",
+      description:
+        "This unique NFT is a collectible card depicting magical mushrooms. Mushrooms have always been a symbol of magic and mystery, and this card reflects that mysterious atmosphere. The card is done in bright colors that create a sense of magic and fantasy. It will make a wonderful addition to any NFT collection.",
+      img_bg: "/NFts/nft_card_7.png",
+      tags: ["Animation", "Illustration", "Moon", "Space"],
+      mintDate: "Jun 30, 2023",
+    },
   },
   {
     id: 8,
@@ -89,6 +126,15 @@ export const artistData = [
     description:
       "My work is characterized by its playfulness and humor, often featuring quirky characters in unexpected situations",
     wallet: "QguSJhWoxBCusgAJEC",
+    nft: {
+      id: 8,
+      title: "The Sports Legends",
+      description:
+        "This remarkable NFT introduces a collectible card celebrating sports legends. The card showcases iconic athletes from various disciplines, paying tribute to their incredible achievements and inspiring performances. It's a must-have for any sports fanatic or history buff!",
+      img_bg: "/NFts/nft_card_3.png",
+      tags: ["Animation", "Illustration", "Moon", "Space"],
+      mintDate: "Aug 26, 2022",
+    },
   },
   {
     id: 9,
@@ -97,6 +143,15 @@ export const artistData = [
     description:
       "The NFT artist who explores the human experience through their expressive figurative paintings",
     wallet: "2gnl8SewHBl0R2w3fV",
+    nft: {
+      id: 9,
+      title: "The Artistic Masterpieces",
+      description:
+        "This stunning NFT presents a collectible card featuring artistic masterpieces. The card displays famous works of art by renowned artists, capturing the essence of their genius and talent. It's perfect for art connoisseurs and those who appreciate the beauty of fine art.",
+      img_bg: "/NFts/nft_card_3.png",
+      tags: ["Animation", "Illustration", "Moon", "Space"],
+      mintDate: "Mar 29, 2024",
+    },
   },
   {
     id: 10,
@@ -105,6 +160,15 @@ export const artistData = [
     description:
       "For me work is deeply rooted in the traditions of classical painting, showcasing exceptional skill and attention to detail",
     wallet: "9oH2t9niEtnvzrvAP4",
+    nft: {
+      id: 10,
+      title: "The Historical Figures",
+      description:
+        "This noteworthy NFT presents a collectible card featuring historical figures. The card depicts influential leaders, inventors, and thinkers who have shaped human history. It's a valuable addition to any history buff's NFT collection, honoring the individuals who have made a lasting impact on our world.",
+      img_bg: "/NFts/nft_card_3.png",
+      tags: ["Animation", "Illustration", "Moon", "Space"],
+      mintDate: "Dec 12, 2021",
+    },
   },
   {
     id: 11,
@@ -113,6 +177,15 @@ export const artistData = [
     description:
       "My work is defined by its minimalist approach, using simple shapes and muted colors to create a sense of calm and tranquility",
     wallet: "JV9Eh7hY1IKM07JK3d",
+    nft: {
+      id: 11,
+      title: "The Science Innovations",
+      description:
+        "This groundbreaking NFT offers a collectible card focusing on science innovations. The card showcases significant scientific breakthroughs and discoveries that have revolutionized our understanding of the world. It's perfect for anyone fascinated by the wonders of science and its continuous progress.",
+      img_bg: "/NFts/nft_card_3.png",
+      tags: ["Animation", "Illustration", "Moon", "Space"],
+      mintDate: "May 13, 2019",
+    },
   },
   {
     id: 12,
@@ -121,6 +194,15 @@ export const artistData = [
     description:
       "I really like work challenges conventional notions of beauty, often incorporating unconventional materials and experimental techniques",
     wallet: "kcZzhGYPZuipSJoVaW",
+    nft: {
+      id: 12,
+      title: "The Gaming Legends",
+      description:
+        "This impressive NFT offers a collectible card honoring gaming legends. The card showcases iconic video game characters and franchises, recognizing their enduring popularity and impact on the gaming industry. It's a must-have for any gamer or gaming enthusiast's NFT collection!",
+      img_bg: "/NFts/nft_card_3.png",
+      tags: ["Animation", "Illustration", "Moon", "Space"],
+      mintDate: "Jul 11, 2020",
+    },
   },
 ];
 

@@ -17,20 +17,26 @@ const TopCreators = () => {
             </h3>
           </div>
           <div className="mr-6">
-            <Link href='/rankings'>
-          <SecondaryButton>
-            <MdOutlineRocketLaunch
-              size={20}
-              className="fill-violet-500 group-hover:fill-cyan-50 duration-300"
-            />
-            View Rankings
-          </SecondaryButton>
-          </Link>
+            <Link href="/rankings">
+              <SecondaryButton>
+                <MdOutlineRocketLaunch
+                  size={20}
+                  className="fill-violet-500 group-hover:fill-cyan-50 duration-300"
+                />
+                View Rankings
+              </SecondaryButton>
+            </Link>
           </div>
         </div>
         <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:place-items-start md:gap-4 lg:gap-x-4 lg:gap-y-8 pt-2 md:mt-4 place-items-center">
-          {artistData.map(({ id, name, img }) => (
-            <TopCreatorsCard key={id} id={id} name={name} image={img} />
+          {artistData.map(({ id, name, img, sales }) => (
+            <TopCreatorsCard
+              key={id}
+              id={id}
+              name={name}
+              image={img}
+              sales={sales}
+            />
           ))}
         </div>
       </div>

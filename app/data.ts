@@ -6,6 +6,7 @@ export const artistData = [
     description:
       "Artist who creates mesmerizing digital landscapes that transport the viewer to another world.",
     wallet: "GhrycSNxoYLCcvssVf",
+    sales: 36.55,
     nft: {
       id: 1,
       title: "The Orbitians",
@@ -23,6 +24,7 @@ export const artistData = [
     description:
       "A master of surrealism, the NFT  artist’s that work blurs the lines between dream and reality",
     wallet: "wjhkQAM0V3I68rs1fW",
+    sales: 22.34,
     nft: {
       id: 2,
       title: "The Loneliness",
@@ -40,6 +42,7 @@ export const artistData = [
     description:
       "Artist who captures the essence of urban life with their vibrant street art",
     wallet: "E6kVEcenki7yHvXBXY",
+    sales: 17.31,
     nft: {
       id: 3,
       title: "The Astronaut",
@@ -57,6 +60,7 @@ export const artistData = [
     description:
       "Artist who uses a unique combination of traditional painting techniques and modern technology to create stunning portraits",
     wallet: "abomgTr6Ikfa7xB4RX",
+    sales: 14.53,
     nft: {
       id: 4,
       title: "Space Exploration",
@@ -74,6 +78,7 @@ export const artistData = [
     description:
       "Known for their intricate patterns and vivid colors, NFT artist’s that work is inspired by ancient cultures from around the world",
     wallet: "qOa8vUi1FJ64XCkZx8",
+    sales: 12.1,
     nft: {
       id: 5,
       title: "The Wildlife Conservation",
@@ -84,7 +89,7 @@ export const artistData = [
       mintDate: "Nov 30, 2021",
     },
   },
-  
+
   {
     id: 6,
     name: "MrFox",
@@ -92,6 +97,7 @@ export const artistData = [
     description:
       "My passion is abstract paintings evoke powerful emotions through the use of bold shapes and striking contrasts",
     wallet: "4QsTAdxeFbePe3z68u",
+    sales: 10.4,
     nft: {
       id: 6,
       title: "The Fantasy Creatures",
@@ -109,6 +115,7 @@ export const artistData = [
     description:
       "Artist who takes inspiration from nature, creating serene landscapes that invite contemplation and reflection",
     wallet: "06cQde5uOddrSvQCnC",
+    sales: 9.3,
     nft: {
       id: 7,
       title: "The Magic Mushrooms",
@@ -126,6 +133,7 @@ export const artistData = [
     description:
       "My work is characterized by its playfulness and humor, often featuring quirky characters in unexpected situations",
     wallet: "QguSJhWoxBCusgAJEC",
+    sales: 8.1,
     nft: {
       id: 8,
       title: "The Sports Legends",
@@ -143,6 +151,7 @@ export const artistData = [
     description:
       "The NFT artist who explores the human experience through their expressive figurative paintings",
     wallet: "2gnl8SewHBl0R2w3fV",
+    sales: 7.23,
     nft: {
       id: 9,
       title: "The Artistic Masterpieces",
@@ -160,6 +169,7 @@ export const artistData = [
     description:
       "For me work is deeply rooted in the traditions of classical painting, showcasing exceptional skill and attention to detail",
     wallet: "9oH2t9niEtnvzrvAP4",
+    sales: 6.11,
     nft: {
       id: 10,
       title: "The Historical Figures",
@@ -177,6 +187,7 @@ export const artistData = [
     description:
       "My work is defined by its minimalist approach, using simple shapes and muted colors to create a sense of calm and tranquility",
     wallet: "JV9Eh7hY1IKM07JK3d",
+    sales: 5.34,
     nft: {
       id: 11,
       title: "The Science Innovations",
@@ -194,6 +205,7 @@ export const artistData = [
     description:
       "I really like work challenges conventional notions of beauty, often incorporating unconventional materials and experimental techniques",
     wallet: "kcZzhGYPZuipSJoVaW",
+    sales: 4.78,
     nft: {
       id: 12,
       title: "The Gaming Legends",

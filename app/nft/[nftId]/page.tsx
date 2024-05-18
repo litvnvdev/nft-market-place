@@ -11,14 +11,10 @@ type Props = {
 };
 
 export default function NftPage({ params }: Props) {
-  console.log(artistData[0].nft?.id);
-  
   const newNftData = artistData.find(
     (data) => data.id.toString() === params.nftId
   );
-  const newArtistData = artistData.find(
-    (artist) => artist.id.toString() === params.nftId
-  );
+  console.log(newNftData?.nft);
 
   if (!params.nftId) {
     return (
@@ -31,14 +27,16 @@ export default function NftPage({ params }: Props) {
   return (
     <>
       <Navbar />
-      {newNftData && newArtistData && (
-        <NftDetails data={newNftData} />
+      {newNftData ? (
+        <NftDetails {...newNftData} />
+      ) : (
+        <div className="flex items-center justify-center h-[60dvh]">
+          <h1 className="text-2xl text-cyan-50 font-semibold">
+            Error! NFT card does not exist. Try Again!
+          </h1>
+        </div>
       )}
-      <div className="flex items-center justify-center h-[60dvh]">
-        <h1 className="text-2xl text-cyan-50 font-semibold">
-          Error! NFT card does not exist. Try Again!
-        </h1>
-      </div>
+
       <Footer />
     </>
   );

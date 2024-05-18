@@ -5,10 +5,24 @@ import PrimaryButton from "./PrimaryButton";
 import HeroCard from "./HeroCard";
 import { artistData } from "../data";
 
+// type Nft = {
+
+//     id: number;
+//     title: string;
+//     description: string;
+//     img_bg: string;
+//     tags: string;
+//     mintDate: string;
+//     sales?: number;
+
+// };
+
 const workSans = Work_Sans({ weight: "400", subsets: ["latin"] });
 const spaceMono = Space_Mono({ weight: "700", subsets: ["latin"] });
 
-const nftObj = artistData.find((data) => data.nft.id === 10);
+const newData = artistData.find((data) => data.id === 10);
+
+const nftData = newData?.nft.find((data) => data.id === 1);
 
 const Hero = () => {
   return (
@@ -65,13 +79,15 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="flex justify-end lg:w-full md:w-[32rem]">
-            <HeroCard
-              title={nftObj?.nft.title}
-              img_bg={nftObj?.nft.img_bg}
-              sales={nftObj?.sales}
-            />
-          </div>
+          {nftData && (
+            <div className="flex justify-end lg:w-full md:w-[32rem]">
+              <HeroCard
+                title={nftData.title}
+                img_bg={nftData.img_bg}
+                sales={nftData.sales}
+              />
+            </div>
+          )}
         </div>
 
         {/* <Image src={Hero_img} alt="hero img" width={510} height={401} className=""/> */}

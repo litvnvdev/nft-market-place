@@ -45,7 +45,7 @@ export default function ArtistPage({ params }: Props) {
     <>
       <Navbar />
       {newArtistData ? (
-        <ArtistDetails icons={socialIcons} {...newArtistData}/>
+        <ArtistDetails icons={socialIcons} {...newArtistData} />
       ) : (
         <div className="flex items-center justify-center h-[60dvh]">
           <h1 className="text-xl text-cyan-50">

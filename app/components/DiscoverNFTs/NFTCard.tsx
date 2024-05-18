@@ -23,8 +23,13 @@ const NFTCard = ({
   price,
 }: NFTCardProps) => {
   return (
-    <Link className="cursor-pointer mb-6 w-11/12 flex flex-col h-[28rem] text-cyan-50 relative group duration-500" href={`/nft/${route}`}>
-      <div className="hidden hover:text-violet-500 lg:group-hover:block absolute top-1/4 left-[40%] z-10 duration-500"><FaRegEye size={45}/></div>
+    <Link
+      className="cursor-pointer mb-6 w-11/12 flex flex-col h-[28rem] text-cyan-50 relative group duration-500"
+      href={`/nft/${route}`}
+    >
+      <div className="hidden hover:text-violet-500 lg:group-hover:block absolute top-1/4 left-[40%] z-10 duration-500">
+        <FaRegEye size={45} />
+      </div>
       <div className="cursor-pointer mb-4 w-full lg:group-hover:translate-y-0.5 flex flex-col h-[28rem] text-cyan-50 relative lg:group-hover:blur-sm duration-500">
         <div
           className="bg-center bg-no-repeat bg-cover w-full h-[28rem] rounded-t-2xl"

@@ -29,13 +29,13 @@ const TopCreators = () => {
           </div>
         </div>
         <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:place-items-start md:gap-4 lg:gap-x-4 lg:gap-y-8 pt-2 md:mt-4 place-items-center">
-          {artistData.map(({ id, name, img, sales }) => (
+          {artistData.map(({ id, name, img, total_sales }) => (
             <TopCreatorsCard
               key={id}
               id={id}
               name={name}
               image={img}
-              sales={sales}
+              sales={total_sales}
             />
           ))}
         </div>

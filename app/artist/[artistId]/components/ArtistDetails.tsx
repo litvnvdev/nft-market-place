@@ -3,28 +3,51 @@ import FilterButton from "@/app/components/FilterButton";
 import SocialMediaIcon from "@/app/components/Footer/SocialMediaIcon";
 import PrimaryButton from "@/app/components/PrimaryButton";
 import SecondaryButton from "@/app/components/SecondaryButton";
-import { NFTsCardData } from "@/app/data";
+import { artistData } from "@/app/data";
 import { GoPlus } from "react-icons/go";
 import { PiCopyLight } from "react-icons/pi";
 
+type nftObject = {
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  img_bg: string;
+  tags: string[];
+  mintDate: string;
+  sales: number;
+};
+
 type Props = {
-    icons: React.ReactElement[];
-    wallet: string;
-    description: string;
-    img: string;
-    name: string;
-}
+  icons: React.ReactElement[];
+  wallet: string;
+  description: string;
+  img: string;
+  name: string;
+  nft: any;
+};
 
+export function ArtistDetails({
+  icons,
+  wallet,
+  description,
+  img,
+  name,
+  nft,
+}: Props) {
+  const filter = ["Created", "Owned", "Collection"];
 
-export function ArtistDetails ({icons, wallet,description,img, name}:Props){
-    const filter = ["Created", "Owned", "Collection"];
-
-    return(
-        <>
-          <section className="w-full h-fit pt-2 border-b border-b-neutral-700">
-        <div className={`bg-[url('/artist-bg.png')] bg-center bg-cover bg-no-repeat`}>
+  return (
+    <>
+      <section className="w-full h-fit pt-2 border-b border-b-neutral-700">
+        <div
+          className={`bg-[url('/artist-bg.png')] bg-center bg-cover bg-no-repeat`}
+        >
           <div className="w-full relative h-[20dvh] bg-gradient-to-b from-transparent to-violet-500">
-            <div style={{backgroundImage: `url(${img})`}} className='bg-contain absolute z-10 top-[calc(50%+2rem)] left-[calc(50%-3rem)] md:left-8 lg:max-w-[80rem] xl:left-[calc(50%-38rem)] bg-slate-300 rounded-2xl border-2 border-zinc-800 w-24 h-24'></div>
+            <div
+              style={{ backgroundImage: `url(${img})` }}
+              className="bg-contain absolute z-10 top-[calc(50%+2rem)] left-[calc(50%-3rem)] md:left-8 lg:max-w-[80rem] xl:left-[calc(50%-38rem)] bg-slate-300 rounded-2xl border-2 border-zinc-800 w-24 h-24"
+            ></div>
           </div>
         </div>
         <div className="flex flex-col my-20 gap-6 w-3/4 sm:w-full sm:px-8 mx-auto lg:max-w-[80rem]">
@@ -32,7 +55,12 @@ export function ArtistDetails ({icons, wallet,description,img, name}:Props){
             <h1 className="font-semibold text-2xl text-cyan-50 ">{name}</h1>
             <div className="flex flex-col gap-4 sm:w-3/4 md:w-1/2 items-center sm:flex-row lg:w-[20rem]">
               <PrimaryButton>
-                <PiCopyLight size={20} /> <p className="text-sm">{wallet.substring(0,4) + '...' + wallet.substring(wallet.length - 7)}</p>
+                <PiCopyLight size={20} />{" "}
+                <p className="text-sm">
+                  {wallet.substring(0, 4) +
+                    "..." +
+                    wallet.substring(wallet.length - 7)}
+                </p>
               </PrimaryButton>
               <SecondaryButton>
                 <GoPlus className="text-violet-500 group-hover:text-cyan-50" />
@@ -57,9 +85,7 @@ export function ArtistDetails ({icons, wallet,description,img, name}:Props){
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="text-neutral-500">Bio</h3>
-            <p className="text-cyan-50">
-              {description}
-            </p>
+            <p className="text-cyan-50">{description}</p>
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="text-neutral-500">Links</h3>
@@ -86,14 +112,24 @@ export function ArtistDetails ({icons, wallet,description,img, name}:Props){
 
       <section className="py-12 bg-neutral-700 flex flex-col items-center">
         <div className="px-8 w-full py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 my-4 place-items-center lg:max-w-[80rem]">
-          {NFTsCardData.map(
-            ({ id, artist_img, artist_name, title, nft_img, price }) => (
+          {nft.map(
+            ({
+              id,
+              img_bg,
+              title,
+              price,
+            }: {
+              id: number;
+              img_bg: string;
+              title: string;
+              price: number;
+            }) => (
               <NFTCard
                 key={id}
-                artist_img={artist_img}
-                artist_name={artist_name}
+                artist_img={img}
+                artist_name={name}
                 title={title}
-                nft_img={nft_img}
+                nft_img={img_bg}
                 price={price}
                 route={id}
               />
@@ -101,8 +137,6 @@ export function ArtistDetails ({icons, wallet,description,img, name}:Props){
           )}
         </div>
       </section>
-
-
-        </>
-    )
+    </>
+  );
 }

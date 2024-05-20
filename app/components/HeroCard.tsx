@@ -16,7 +16,7 @@ const HeroCard = ({ title, img_bg, sales }: Props) => {
       <Link
         style={{ backgroundImage: `url(${img_bg})` }}
         className={`w-full lg:w-full bg-cover bg-center bg-no-repeat h-[20rem] lg:h-full rounded-t-2xl`}
-        href="/nft/10"
+        href="artist/10/currentNft/1"
       ></Link>
       <div className="w-full lg:w-full  h-24 rounded-b-lg bg-neutral-700">
         <div className="pl-4 flex flex-col items-start gap-1 justify-start">

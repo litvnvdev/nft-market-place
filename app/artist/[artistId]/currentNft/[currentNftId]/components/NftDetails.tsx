@@ -1,6 +1,4 @@
 import NFTArtist from "@/app/components/NFTArtist";
-import { NFTsCardData } from "@/app/data";
-import Navbar from "@/app/components/Navbar";
 import Timer from "@/app/components/NFTHighlight/Timer";
 import { TbWorld } from "react-icons/tb";
 import Link from "next/link";
@@ -8,7 +6,7 @@ import SecondaryButton from "@/app/components/SecondaryButton";
 import { FaArrowRightLong } from "react-icons/fa6";
 import NFTCard from "@/app/components/DiscoverNFTs/NFTCard";
 import Footer from "@/app/components/Footer/Footer";
-import { Tag } from "../../components/Tag";
+import { Tag } from "./Tag";
 
 type Props = {
   id: number;
@@ -16,11 +14,23 @@ type Props = {
   img: string;
   name: string;
   nft: any;
+  currentNftId?: string;
+  currentArtistId?: string;
 };
 
-export function NftDetails({ id, name, img, nft }: Props) {
-  const newData = nft.find((item: any) => item.id === id);
-  console.log(newData);
+export function NftDetails({
+  id,
+  name,
+  img,
+  nft,
+  currentNftId,
+  currentArtistId,
+}: Props) {
+  const newData = currentNftId
+    ? nft.find((item: any) => item.id.toString() === currentNftId)
+    : nft.find((item: any) => item.id === id);
+
+  console.log(currentArtistId);
 
   if (!newData) {
     return (
@@ -66,7 +76,7 @@ export function NftDetails({ id, name, img, nft }: Props) {
               </div>
               <div className="mt-4 sm:w-1/2">
                 <h3 className="text-neutral-500">Description</h3>
-                <p className="text-neutral-300">{nft.description}</p>
+                <p className="text-neutral-300">{newData.description}</p>
               </div>
 
               <div className="mt-4 flex flex-col gap-2">
@@ -129,7 +139,7 @@ export function NftDetails({ id, name, img, nft }: Props) {
                       title={title}
                       nft_img={img_bg}
                       price={price}
-                      route={id}
+                      route={`/artist/${currentArtistId}/currentNft/${id}`}
                     />
                   )
                 )}

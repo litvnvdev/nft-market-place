@@ -9,7 +9,7 @@ type NFTCardProps = {
   artist_img: string;
   title: string;
   price: number;
-  route: number;
+  route: number | string;
 };
 
 const spaceMono = Space_Mono({ weight: "400", subsets: ["latin"] });
@@ -25,7 +25,7 @@ const NFTCard = ({
   return (
     <Link
       className="cursor-pointer mb-6 w-11/12 flex flex-col h-[28rem] text-cyan-50 relative group duration-500"
-      href={`/nft/${route}`}
+      href={`${route}`}
     >
       <div className="hidden hover:text-violet-500 lg:group-hover:block absolute top-1/4 left-[40%] z-10 duration-500">
         <FaRegEye size={45} />

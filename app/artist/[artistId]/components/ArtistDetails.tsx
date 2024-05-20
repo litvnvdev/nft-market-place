@@ -25,6 +25,7 @@ type Props = {
   img: string;
   name: string;
   nft: any;
+  artistId: string;
 };
 
 export function ArtistDetails({
@@ -34,6 +35,7 @@ export function ArtistDetails({
   img,
   name,
   nft,
+  artistId,
 }: Props) {
   const filter = ["Created", "Owned", "Collection"];
 
@@ -131,7 +133,7 @@ export function ArtistDetails({
                 title={title}
                 nft_img={img_bg}
                 price={price}
-                route={id}
+                route={`/artist/${artistId}/currentNft/${id}`}
               />
             )
           )}

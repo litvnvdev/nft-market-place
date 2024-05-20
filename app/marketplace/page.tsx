@@ -2,11 +2,13 @@ import NFTCard from "../components/DiscoverNFTs/NFTCard";
 import FilterButton from "../components/FilterButton";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar";
-import { NFTsCardData } from "../data";
+import { NFTsCardData, artistData } from "../data";
 import { Search } from "./components/Search";
 
 export default function MarketplacePage() {
   const filter = ["NFTs", "Collections"];
+  const newArtistData = artistData.find((data) => data.id < 2);
+  console.log(newArtistData);
 
   return (
     <>
@@ -22,7 +24,6 @@ export default function MarketplacePage() {
           </p>
           <Search />
         </div>
-        
       </section>
 
       <section className="w-full h-fit border-t-zinc-800 bg-neutral-700">
@@ -34,20 +35,20 @@ export default function MarketplacePage() {
           </ul>
         </div>
         <div className="lg:max-w-[90%] lg:mx-auto pt-10 pb-20 px-8 grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-x-8 md:gap-y-16 place-items-center lg:flex lg:justify-between">
-            {NFTsCardData.map(
-              ({ id, artist_img, artist_name, title, nft_img, price }) => (
-                <NFTCard
-                  key={id}
-                  artist_img={artist_img}
-                  artist_name={artist_name}
-                  title={title}
-                  nft_img={nft_img}
-                  price={price}
-                  route={id}
-                />
-              )
-            )}
-          </div>
+          {NFTsCardData.map(
+            ({ id, artist_img, artist_name, title, nft_img, price }) => (
+              <NFTCard
+                key={id}
+                artist_img={artist_img}
+                artist_name={artist_name}
+                title={title}
+                nft_img={nft_img}
+                price={price}
+                route={`artist/${id}/currentNft/${newArtistData?.id}`}
+              />
+            )
+          )}
+        </div>
       </section>
       <Footer />
     </>

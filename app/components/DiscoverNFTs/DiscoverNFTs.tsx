@@ -1,11 +1,14 @@
 import { FaRegEye } from "react-icons/fa";
 
-import { NFTsCardData } from "@/app/data";
+import { NFTsCardData, artistData } from "@/app/data";
 import SecondaryButton from "../SecondaryButton";
 import NFTCard from "./NFTCard";
 import Link from "next/link";
 
 const DiscoverNFTs = () => {
+  const newArtistData = artistData.find((data) => data.id < 2);
+  console.log(newArtistData);
+
   return (
     <section className="py-20 md:px-8">
       <div className="container md:max-w-[72rem] lg:max-w-[80rem]">
@@ -26,7 +29,7 @@ const DiscoverNFTs = () => {
                   title={title}
                   nft_img={nft_img}
                   price={price}
-                  route={id}
+                  route={`artist/${id}/currentNft/${newArtistData?.id}`}
                 />
               )
             )}

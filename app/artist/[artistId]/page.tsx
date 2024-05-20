@@ -6,7 +6,7 @@ import { ArtistDetails } from "./components/ArtistDetails";
 import { artistData } from "@/app/data";
 
 type Props = {
-  params: { artistId: string };
+  params: { artistId: string; currentNftId: string };
 };
 
 const socialIcons = [
@@ -45,7 +45,11 @@ export default function ArtistPage({ params }: Props) {
     <>
       <Navbar />
       {newArtistData ? (
-        <ArtistDetails icons={socialIcons} {...newArtistData} />
+        <ArtistDetails
+          icons={socialIcons}
+          {...newArtistData}
+          artistId={params.artistId}
+        />
       ) : (
         <div className="flex items-center justify-center h-[60dvh]">
           <h1 className="text-xl text-cyan-50">

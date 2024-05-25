@@ -28,7 +28,7 @@ const Timer = ({ button }: TimerProps) => {
       <div className="flex flex-col max-w-96">
         <p className={`${spaceMono.className}`}>Auction ends in:</p>
         <div
-          className={`${spaceMonoBold.className} mt-4 grid grid-cols-5 gap-4 text-4xl font-bold place-items-center`}
+          className={`${spaceMonoBold.className} mt-4 grid grid-cols-5 gap-4 text-xl lg:text-4xl font-bold place-items-center`}
         >
           <p>{Math.floor(time / 3600)}</p>
           <p>:</p>
@@ -44,7 +44,11 @@ const Timer = ({ button }: TimerProps) => {
           <p>Minutes</p>
           <p>Seconds</p>
         </div>
-        {button && <div className="w-full mt-6"><PrimaryButton>Place bid</PrimaryButton></div>}
+        {button && (
+          <div className="w-full mt-6">
+            <PrimaryButton>Place bid</PrimaryButton>
+          </div>
+        )}
       </div>
     </div>
   );

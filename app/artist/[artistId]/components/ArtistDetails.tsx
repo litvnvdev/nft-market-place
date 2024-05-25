@@ -41,18 +41,18 @@ export function ArtistDetails({
 
   return (
     <>
-      <section className="w-full h-fit pt-2 border-b border-b-neutral-700">
+      <section className="w-full  pt-2 border-b border-b-neutral-700">
         <div
-          className={`bg-[url('/artist-bg.png')] bg-center bg-cover bg-no-repeat`}
+          className={`bg-[url('/artist-bg.png')] h-[250px] md:h-[280px] lg:h-[320px] bg-center bg-cover bg-no-repeat`}
         >
-          <div className="w-full relative h-[20dvh] bg-gradient-to-b from-transparent to-violet-500">
+          <div className="w-full relative h-[250px] md:h-[280px] lg:md:h-[320px] bg-gradient-to-b from-transparent to-violet-500">
             <div
               style={{ backgroundImage: `url(${img})` }}
-              className="bg-contain absolute z-10 top-[calc(50%+2rem)] left-[calc(50%-3rem)] md:left-8 lg:max-w-[80rem] xl:left-[calc(50%-38rem)] bg-slate-300 rounded-2xl border-2 border-zinc-800 w-24 h-24"
+              className="bg-contain absolute z-10 top-[calc(50%+4.75rem)] md:top-[calc(50%+5.5rem)] lg:top-[calc(50%+7rem)] left-[calc(50%-3rem)] md:left-8 lg:max-w-[80rem] xl:left-[calc(50%-38rem)] bg-slate-300 rounded-2xl border-2 border-zinc-800 w-24 h-24"
             ></div>
           </div>
         </div>
-        <div className="flex flex-col my-20 gap-6 w-3/4 sm:w-full sm:px-8 mx-auto lg:max-w-[80rem]">
+        <div className="flex flex-col my-20 gap-6 w-3/4 sm:w-full sm:px-8 lg:px-0 mx-auto lg:max-w-[80rem]">
           <div className="flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center">
             <h1 className="font-semibold text-2xl text-cyan-50 ">{name}</h1>
             <div className="flex flex-col gap-4 sm:w-3/4 md:w-1/2 items-center sm:flex-row lg:w-[20rem]">

@@ -10,10 +10,22 @@ import SocialMediaIcon from "./SocialMediaIcon";
 const spaceMono = Space_Mono({ weight: "700", subsets: ["latin"] });
 
 const socialIcons = [
-  <RxDiscordLogo className="group-hover:translate-y-1 group-hover:text-cyan-50 duration-300" size={32} />,
-  <PiYoutubeLogo className="group-hover:translate-y-1 group-hover:text-cyan-50 duration-300" size={32} />,
-  <RxTwitterLogo className="group-hover:translate-y-1 group-hover:text-cyan-50 duration-300" size={32} />,
-  <RxInstagramLogo className="group-hover:translate-y-1 group-hover:text-cyan-50 duration-300" size={32} />,
+  <RxDiscordLogo
+    className="group-hover:translate-y-1 group-hover:text-cyan-50 duration-300"
+    size={32}
+  />,
+  <PiYoutubeLogo
+    className="group-hover:translate-y-1 group-hover:text-cyan-50 duration-300"
+    size={32}
+  />,
+  <RxTwitterLogo
+    className="group-hover:translate-y-1 group-hover:text-cyan-50 duration-300"
+    size={32}
+  />,
+  <RxInstagramLogo
+    className="group-hover:translate-y-1 group-hover:text-cyan-50 duration-300"
+    size={32}
+  />,
 ];
 
 const Footer = () => {

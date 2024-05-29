@@ -3,14 +3,14 @@ import FilterButton from "../components/FilterButton";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar";
 import { artistData } from "../data";
-import { useDevice } from "../hooks/useDevice";
+// import { useDevice } from "../hooks/useDevice";
 import MobileCreatorCard from "./components/MobileCreatorCard";
 import { MobileFilterSection } from "./components/MobileFilterSection";
 
 export default function RankingsPage() {
   const filter = ["Today", "This Week", "This Month", "All Time"];
 
-  const { isMobile } = useDevice();
+  // const { isMobile } = useDevice();
 
   return (
     <>
@@ -25,11 +25,10 @@ export default function RankingsPage() {
 
         <div className="flex flex-col items-center bg-zinc-800 md:mt-6">
           <ul className="flex gap-6 lg:max-w-[80rem] lg:mx-auto text-neutral-500 font-medium  bg-zinc-800 w-full justify-between sm:place-content-stretch   h-20">
-            {isMobile ? (
-              <MobileFilterSection />
-            ) : (
-              filter.map((item, id) => <FilterButton item={item} key={id} />)
-            )}
+            <MobileFilterSection />
+            {filter.map((item, id) => (
+              <FilterButton item={item} key={id} />
+            ))}
           </ul>
         </div>
       </section>
@@ -51,6 +50,7 @@ export default function RankingsPage() {
         <div className=" flex flex-col gap-4 mb-8 lg:max-w-[80rem] lg:mx-auto">
           {artistData.map(({ id, name, img }) => (
             <MobileCreatorCard
+              key={id}
               id={id}
               name={name}
               img={img}

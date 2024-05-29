@@ -18,6 +18,10 @@ const config: Config = {
           "50%": { transform: "rotateY(45deg)" },
           "100%": { transform: "rotateY(-45deg)" },
         },
+        slideLeft: {
+          "0%": { transform: "translateX(100px)" },
+          "100%": { transform: "translateX(-10px)" },
+        },
       },
     },
   },

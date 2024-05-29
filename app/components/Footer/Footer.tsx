@@ -57,8 +57,8 @@ const Footer = () => {
           </h1>
           <nav>
             <ul className="flex flex-col gap-4">
-              {navBarItems.map((item) => (
-                <li className="hover:text-violet-400 duration-300" key={item}>
+              {navBarItems.map((item, id) => (
+                <li className="hover:text-violet-400 duration-300" key={id}>
                   <a href="#">{item}</a>
                 </li>
               ))}

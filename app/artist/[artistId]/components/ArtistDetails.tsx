@@ -94,7 +94,7 @@ export function ArtistDetails({
             <ul className="flex gap-3 text-neutral-500">
               {icons.map((icon, id) => (
                 <li key={id}>
-                  <SocialMediaIcon icon={icon} />
+                  <SocialMediaIcon key={id} icon={icon} />
                 </li>
               ))}
             </ul>

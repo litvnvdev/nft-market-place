@@ -1,10 +1,16 @@
 type Props = {
   icon: React.ReactNode;
+  key: number;
 };
 
-const SocialMediaIcon = ({ icon }: Props) => {
+const SocialMediaIcon = ({ icon, key }: Props) => {
   return (
-    <a className="group lg:hover:translate-y-1 duration-300" href="#" target="_blank">
+    <a
+      key={key}
+      className="group lg:hover:translate-y-1 duration-300"
+      href="#"
+      target="_blank"
+    >
       {icon}
     </a>
   );

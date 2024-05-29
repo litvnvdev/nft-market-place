@@ -80,7 +80,7 @@ const MobileNavbar = () => {
             </button>
             <div className="group flex gap-2 mt-4">
               {socialIcons.map((icon, id) => (
-                <SocialMediaIcon key={id} icon={icon} />
+                <SocialMediaIcon id={id} icon={icon} />
               ))}
             </div>
           </ul>

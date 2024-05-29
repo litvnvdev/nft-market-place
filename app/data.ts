@@ -14,7 +14,7 @@ export const artistData = [
         price: 1.56,
         description:
           "The Orbitians is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
-        img_bg: "/NFts/nft_card_1.png",
+        img_bg: "/NFTs/nft_card_1.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Sep 30, 2022",
         sales: 1.55,
@@ -26,7 +26,7 @@ export const artistData = [
         price: 1.27,
         description:
           "The spaceship is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
-        img_bg: "/NFts/nft_card_1.png",
+        img_bg: "/NFTs/nft_card_1.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Jun 1, 2022",
         sales: 2.13,
@@ -38,7 +38,7 @@ export const artistData = [
         price: 1.56,
         description:
           "The Orbitians is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
-        img_bg: "/NFts/nft_card_1.png",
+        img_bg: "/NFTs/nft_card_1.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Sep 30, 2022",
         sales: 1.55,
@@ -60,7 +60,7 @@ export const artistData = [
         title: "The Loneliness",
         description:
           "The Loneliness is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
-        img_bg: "/NFts/nft_card_2.png",
+        img_bg: "/NFTs/nft_card_2.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Sep 10, 2023",
         sales: 1.09,
@@ -71,7 +71,7 @@ export const artistData = [
         title: "The Loneliness 2",
         description:
           "The Loneliness is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
-        img_bg: "/NFts/nft_card_2.png",
+        img_bg: "/NFTs/nft_card_2.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Sep 10, 2023",
         sales: 3.13,
@@ -82,7 +82,7 @@ export const artistData = [
         title: "The Loneliness 3",
         description:
           "The Loneliness is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
-        img_bg: "/NFts/nft_card_2.png",
+        img_bg: "/NFTs/nft_card_2.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Sep 10, 2023",
         sales: 3.13,
@@ -104,7 +104,7 @@ export const artistData = [
         title: "The Astronaut",
         description:
           "The Astronaut is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
-        img_bg: "/NFts/nft_card_3.png",
+        img_bg: "/NFTs/nft_card_3.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Oct 1, 2021",
         sales: 2.56,
@@ -115,7 +115,7 @@ export const artistData = [
         title: "The Astronaut",
         description:
           "The Astronaut is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
-        img_bg: "/NFts/nft_card_3.png",
+        img_bg: "/NFTs/nft_card_3.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Oct 1, 2021",
         sales: 3.67,
@@ -137,7 +137,7 @@ export const artistData = [
         title: "Space Exploration",
         description:
           "This unique NFT represents a collectible card featuring space exploration. The card depicts astronauts exploring the vastness of the universe and discovering new worlds. It is perfect for any NFT collection enthusiast who loves all things space!",
-        img_bg: "/NFts/nft_card_3.png",
+        img_bg: "/NFTs/nft_card_3.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Nov 26, 2023",
         sales: 7.89,
@@ -148,7 +148,7 @@ export const artistData = [
         title: "Space Exploration 2",
         description:
           "This unique NFT represents a collectible card featuring space exploration. The card depicts astronauts exploring the vastness of the universe and discovering new worlds. It is perfect for any NFT collection enthusiast who loves all things space!",
-        img_bg: "/NFts/nft_card_3.png",
+        img_bg: "/NFTs/nft_card_3.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Nov 26, 2023",
         sales: 5.11,
@@ -170,7 +170,7 @@ export const artistData = [
         title: "The Wildlife Conservation",
         description:
           "This special NFT showcases a collectible card focused on wildlife conservation. The card features various endangered animals, highlighting the importance of protecting our planet's biodiversity. It serves as a reminder to cherish and preserve nature's beauty.",
-        img_bg: "/NFts/nft_card_3.png",
+        img_bg: "/NFTs/nft_card_3.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Nov 30, 2021",
         sales: 3.07,
@@ -181,7 +181,7 @@ export const artistData = [
         title: "The Wildlife Conservation 2",
         description:
           "This special NFT showcases a collectible card focused on wildlife conservation. The card features various endangered animals, highlighting the importance of protecting our planet's biodiversity. It serves as a reminder to cherish and preserve nature's beauty.",
-        img_bg: "/NFts/nft_card_3.png",
+        img_bg: "/NFTs/nft_card_3.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Nov 30, 2021",
         sales: 1.1,
@@ -204,7 +204,7 @@ export const artistData = [
         title: "The Fantasy Creatures",
         description:
           "This magical NFT offers a collectible card featuring fantasy creatures. The card illustrates mythical beings such as dragons, unicorns, and fairies, transporting you into a realm of enchantment and wonder. It's ideal for anyone who appreciates the whimsy and imagination of fantasy worlds.",
-        img_bg: "/NFts/nft_card_3.png",
+        img_bg: "/NFTs/nft_card_3.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "April 16, 2023",
         sales: 2.11,
@@ -215,7 +215,7 @@ export const artistData = [
         title: "The Fantasy Creatures 2",
         description:
           "This magical NFT offers a collectible card featuring fantasy creatures. The card illustrates mythical beings such as dragons, unicorns, and fairies, transporting you into a realm of enchantment and wonder. It's ideal for anyone who appreciates the whimsy and imagination of fantasy worlds.",
-        img_bg: "/NFts/nft_card_3.png",
+        img_bg: "/NFTs/nft_card_3.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "April 16, 2023",
         sales: 1.55,
@@ -237,7 +237,7 @@ export const artistData = [
         title: "The Magic Mushrooms",
         description:
           "This unique NFT is a collectible card depicting magical mushrooms. Mushrooms have always been a symbol of magic and mystery, and this card reflects that mysterious atmosphere. The card is done in bright colors that create a sense of magic and fantasy. It will make a wonderful addition to any NFT collection.",
-        img_bg: "/NFts/nft_card_7.png",
+        img_bg: "/NFTs/nft_card_7.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Jun 30, 2023",
         sales: 1.23,
@@ -248,7 +248,7 @@ export const artistData = [
         title: "The Magic Mushrooms 2",
         description:
           "This unique NFT is a collectible card depicting magical mushrooms. Mushrooms have always been a symbol of magic and mystery, and this card reflects that mysterious atmosphere. The card is done in bright colors that create a sense of magic and fantasy. It will make a wonderful addition to any NFT collection.",
-        img_bg: "/NFts/nft_card_7.png",
+        img_bg: "/NFTs/nft_card_7.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Jun 30, 2023",
         sales: 2.33,
@@ -270,7 +270,7 @@ export const artistData = [
         title: "The Sports Legends",
         description:
           "This remarkable NFT introduces a collectible card celebrating sports legends. The card showcases iconic athletes from various disciplines, paying tribute to their incredible achievements and inspiring performances. It's a must-have for any sports fanatic or history buff!",
-        img_bg: "/NFts/nft_card_3.png",
+        img_bg: "/NFTs/nft_card_3.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Aug 26, 2022",
         sales: 4.23,
@@ -281,7 +281,7 @@ export const artistData = [
         title: "The Sports Legends",
         description:
           "This remarkable NFT introduces a collectible card celebrating sports legends. The card showcases iconic athletes from various disciplines, paying tribute to their incredible achievements and inspiring performances. It's a must-have for any sports fanatic or history buff!",
-        img_bg: "/NFts/nft_card_3.png",
+        img_bg: "/NFTs/nft_card_3.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Aug 26, 2022",
         sales: 2.23,
@@ -303,7 +303,7 @@ export const artistData = [
         title: "The Artistic Masterpieces",
         description:
           "This stunning NFT presents a collectible card featuring artistic masterpieces. The card displays famous works of art by renowned artists, capturing the essence of their genius and talent. It's perfect for art connoisseurs and those who appreciate the beauty of fine art.",
-        img_bg: "/NFts/nft_card_3.png",
+        img_bg: "/NFTs/nft_card_3.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Mar 29, 2024",
         sales: 7.23,
@@ -314,7 +314,7 @@ export const artistData = [
         title: "The Artistic Masterpieces",
         description:
           "This stunning NFT presents a collectible card featuring artistic masterpieces. The card displays famous works of art by renowned artists, capturing the essence of their genius and talent. It's perfect for art connoisseurs and those who appreciate the beauty of fine art.",
-        img_bg: "/NFts/nft_card_3.png",
+        img_bg: "/NFTs/nft_card_3.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Mar 29, 2024",
         sales: 3.23,
@@ -336,7 +336,7 @@ export const artistData = [
         title: "The Historical Figures",
         description:
           "This noteworthy NFT presents a collectible card featuring historical figures. The card depicts influential leaders, inventors, and thinkers who have shaped human history. It's a valuable addition to any history buff's NFT collection, honoring the individuals who have made a lasting impact on our world.",
-        img_bg: "/NFts/nft_card_3.png",
+        img_bg: "/NFTs/nft_card_3.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Dec 12, 2021",
         sales: 6.11,
@@ -347,7 +347,7 @@ export const artistData = [
         title: "The Historical Figures 2",
         description:
           "This noteworthy NFT presents a collectible card featuring historical figures. The card depicts influential leaders, inventors, and thinkers who have shaped human history. It's a valuable addition to any history buff's NFT collection, honoring the individuals who have made a lasting impact on our world.",
-        img_bg: "/NFts/nft_card_3.png",
+        img_bg: "/NFTs/nft_card_3.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Dec 12, 2021",
         sales: 4.27,
@@ -369,7 +369,7 @@ export const artistData = [
         title: "The Science Innovations",
         description:
           "This groundbreaking NFT offers a collectible card focusing on science innovations. The card showcases significant scientific breakthroughs and discoveries that have revolutionized our understanding of the world. It's perfect for anyone fascinated by the wonders of science and its continuous progress.",
-        img_bg: "/NFts/nft_card_3.png",
+        img_bg: "/NFTs/nft_card_3.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "May 13, 2019",
         sales: 2.22,
@@ -380,7 +380,7 @@ export const artistData = [
         title: "The Science Innovations 2",
         description:
           "This groundbreaking NFT offers a collectible card focusing on science innovations. The card showcases significant scientific breakthroughs and discoveries that have revolutionized our understanding of the world. It's perfect for anyone fascinated by the wonders of science and its continuous progress.",
-        img_bg: "/NFts/nft_card_3.png",
+        img_bg: "/NFTs/nft_card_3.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "May 13, 2019",
         sales: 1.77,
@@ -402,7 +402,7 @@ export const artistData = [
         title: "The Gaming Legends",
         description:
           "This impressive NFT offers a collectible card honoring gaming legends. The card showcases iconic video game characters and franchises, recognizing their enduring popularity and impact on the gaming industry. It's a must-have for any gamer or gaming enthusiast's NFT collection!",
-        img_bg: "/NFts/nft_card_3.png",
+        img_bg: "/NFTs/nft_card_3.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Jul 11, 2020",
         sales: 1.11,
@@ -413,7 +413,7 @@ export const artistData = [
         title: "The Gaming Legends 2",
         description:
           "This impressive NFT offers a collectible card honoring gaming legends. The card showcases iconic video game characters and franchises, recognizing their enduring popularity and impact on the gaming industry. It's a must-have for any gamer or gaming enthusiast's NFT collection!",
-        img_bg: "/NFts/nft_card_3.png",
+        img_bg: "/NFTs/nft_card_3.png",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Jul 11, 2020",
         sales: 0.78,
@@ -486,7 +486,7 @@ export const nftPageData = [
     title: "The Orbitians",
     description:
       "The Orbitians is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
-    img_bg: "/NFts/nft_card_1.png",
+    img_bg: "/NFTs/nft_card_1.png",
     tags: ["Animation", "Illustration", "Moon", "Space"],
     mintDate: "Sep 30, 2022",
   },

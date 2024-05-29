@@ -15,7 +15,23 @@ const Navbar = () => {
   // const { isMobile } = useDevice();
   // console.log(isMobile);
 
-  const navBarItems = ["Marketplace", "Rankings", "Connect a wallet"];
+  const navBarItems = [
+    {
+      id: 1,
+      title: "Marketplace",
+      route: "/marketplace",
+    },
+    {
+      id: 2,
+      title: "Rankings",
+      route: "/rankings",
+    },
+    {
+      id: 3,
+      title: "Connect a wallet",
+      route: "/connect-a-wallet",
+    },
+  ];
 
   return (
     <>
@@ -37,9 +53,9 @@ const Navbar = () => {
             <ul
               className={`${workSans.className}  flex gap-6 items-center justify-between  text-cyan-50`}
             >
-              {navBarItems.map((el, id) => (
+              {navBarItems.map(({ title, id, route }) => (
                 <li className="hover:text-violet-400 duration-300" key={id}>
-                  <Link href={`/${el.toLocaleLowerCase()}`}>{el}</Link>
+                  <Link href={route}>{title}</Link>
                 </li>
               ))}
               <Link href="/sign-up">

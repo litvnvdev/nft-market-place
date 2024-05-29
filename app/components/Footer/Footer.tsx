@@ -47,7 +47,7 @@ const Footer = () => {
           <p>Join our community</p>
           <div className="flex gap-2">
             {socialIcons.map((icon, id) => (
-              <SocialMediaIcon key={id} icon={icon} />
+              <SocialMediaIcon id={id} icon={icon} />
             ))}
           </div>
         </div>

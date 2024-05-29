@@ -6,6 +6,12 @@ import { MdOutlineEmail, MdLock } from "react-icons/md";
 import Navbar from "../components/Navbar";
 import { SignUpInput } from "./components/SignUpInput";
 import Footer from "../components/Footer/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sign up",
+  description: "Sign up page",
+};
 
 const arrIcons = [
   {

@@ -17,9 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${workSans.className} bg-zinc-800`}>
-        {children}
-      </body>
+      <link rel="shortcut icon" href="/logo.svg" />
+      <body className={`${workSans.className} bg-zinc-800`}>{children}</body>
     </html>
   );
 }

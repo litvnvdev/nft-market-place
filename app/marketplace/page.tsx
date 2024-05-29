@@ -1,9 +1,15 @@
+import { Metadata } from "next";
 import NFTCard from "../components/DiscoverNFTs/NFTCard";
 import FilterButton from "../components/FilterButton";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar";
 import { NFTsCardData, artistData } from "../data";
 import { Search } from "./components/Search";
+
+export const metadata: Metadata = {
+  title: "Marketplace",
+  description: "Marketplace Page",
+};
 
 export default function MarketplacePage() {
   const filter = ["NFTs", "Collections"];

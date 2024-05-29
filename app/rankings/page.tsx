@@ -1,4 +1,4 @@
-"use client";
+import { Metadata } from "next";
 import FilterButton from "../components/FilterButton";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar";
@@ -6,6 +6,11 @@ import { artistData } from "../data";
 // import { useDevice } from "../hooks/useDevice";
 import MobileCreatorCard from "./components/MobileCreatorCard";
 import { MobileFilterSection } from "./components/MobileFilterSection";
+
+export const metadata: Metadata = {
+  title: "Rankings",
+  description: "Rankings Page",
+};
 
 export default function RankingsPage() {
   const filter = ["Today", "This Week", "This Month", "All Time"];

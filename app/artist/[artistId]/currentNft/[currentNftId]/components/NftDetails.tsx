@@ -155,7 +155,6 @@ export function NftDetails({
               </div>
             </div>
           </section>
-          <Footer />
         </>
       </main>
     </>

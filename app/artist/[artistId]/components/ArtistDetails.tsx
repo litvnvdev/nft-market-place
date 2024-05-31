@@ -38,12 +38,14 @@ export function ArtistDetails({
   artistId,
 }: Props) {
   const filter = ["Created", "Owned", "Collection"];
+  const { img_bg } = nft[0];
 
   return (
     <>
       <section className="w-full  pt-2 border-b border-b-neutral-700">
         <div
-          className={`bg-[url('/artist-bg.png')] h-[250px] md:h-[280px] lg:h-[320px] bg-center bg-cover bg-no-repeat`}
+          className={`h-[250px] md:h-[280px] lg:h-[320px] bg-center bg-cover bg-no-repeat`}
+          style={{ backgroundImage: `url(${img_bg})` }}
         >
           <div className="w-full relative h-[250px] md:h-[280px] lg:md:h-[320px] bg-gradient-to-b from-transparent to-violet-500">
             <div

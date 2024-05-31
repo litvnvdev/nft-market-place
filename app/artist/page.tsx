@@ -15,13 +15,11 @@ import { NFTsCardData } from "../data";
 import NFTCard from "../components/DiscoverNFTs/NFTCard";
 import FilterButton from "../components/FilterButton";
 
-
-
 export default function ArtistPage() {
   return (
     <>
       <Navbar />
-     <div>Somethin here</div>
+      <div>Somethin here</div>
       <Footer />
     </>
   );

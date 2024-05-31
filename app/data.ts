@@ -22,11 +22,11 @@ export const artistData = [
       },
       {
         id: 2,
-        title: "The Spaceship",
+        title: "The Dawn of Tomorrow",
         price: 1.27,
         description:
-          "The spaceship is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
-        img_bg: "/NFTs/nft_card_1.png",
+          "The Dawn of Tomorrow is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
+        img_bg: "/NFTs/1.jpg",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Jun 1, 2022",
         sales: 2.13,
@@ -34,11 +34,11 @@ export const artistData = [
       },
       {
         id: 3,
-        title: "The Orbitians 3",
+        title: "Eternal Flame",
         price: 1.56,
         description:
-          "The Orbitians is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
-        img_bg: "/NFTs/nft_card_1.png",
+          "The Eternal Flame is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
+        img_bg: "/NFTs/3.jpg",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Sep 30, 2022",
         sales: 1.55,
@@ -58,6 +58,7 @@ export const artistData = [
       {
         id: 1,
         title: "The Loneliness",
+        price: 2.56,
         description:
           "The Loneliness is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
         img_bg: "/NFTs/nft_card_2.png",
@@ -68,10 +69,11 @@ export const artistData = [
       },
       {
         id: 2,
-        title: "The Loneliness 2",
+        title: "Mystic Embrace",
+        price: 1.21,
         description:
-          "The Loneliness is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
-        img_bg: "/NFTs/nft_card_2.png",
+          "Mystic Embrace is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
+        img_bg: "/NFTs/2.jpg",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Sep 10, 2023",
         sales: 3.13,
@@ -79,10 +81,11 @@ export const artistData = [
       },
       {
         id: 3,
-        title: "The Loneliness 3",
+        title: "Through the Ages",
+        price: 1.46,
         description:
-          "The Loneliness is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
-        img_bg: "/NFTs/nft_card_2.png",
+          "Through the Ages is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
+        img_bg: "/NFTs/4.jpg",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Sep 10, 2023",
         sales: 3.13,
@@ -102,6 +105,7 @@ export const artistData = [
       {
         id: 1,
         title: "The Astronaut",
+        price: 1.78,
         description:
           "The Astronaut is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
         img_bg: "/NFTs/nft_card_3.png",
@@ -112,10 +116,11 @@ export const artistData = [
       },
       {
         id: 2,
-        title: "The Astronaut",
+        title: "Golden Horizon",
+        price: 2.34,
         description:
-          "The Astronaut is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
-        img_bg: "/NFTs/nft_card_3.png",
+          "Golden Horizon is a collection of 10,000 unique NFTs on the Ethereum blockchain,There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians. They live in a metal space machines, high up in the sky and only have one foot on Earth. These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
+        img_bg: "/NFTs/5.jpg",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Oct 1, 2021",
         sales: 3.67,
@@ -134,10 +139,11 @@ export const artistData = [
     nft: [
       {
         id: 1,
-        title: "Space Exploration",
+        title: "Embracing Solitude",
+        price: 1.56,
         description:
           "This unique NFT represents a collectible card featuring space exploration. The card depicts astronauts exploring the vastness of the universe and discovering new worlds. It is perfect for any NFT collection enthusiast who loves all things space!",
-        img_bg: "/NFTs/nft_card_3.png",
+        img_bg: "/NFTs/6.jpg",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Nov 26, 2023",
         sales: 7.89,
@@ -145,10 +151,11 @@ export const artistData = [
       },
       {
         id: 2,
-        title: "Space Exploration 2",
+        title: "Echoes of the Past",
+        price: 2.56,
         description:
           "This unique NFT represents a collectible card featuring space exploration. The card depicts astronauts exploring the vastness of the universe and discovering new worlds. It is perfect for any NFT collection enthusiast who loves all things space!",
-        img_bg: "/NFTs/nft_card_3.png",
+        img_bg: "/NFTs/7.jpg",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Nov 26, 2023",
         sales: 5.11,
@@ -167,10 +174,11 @@ export const artistData = [
     nft: [
       {
         id: 1,
-        title: "The Wildlife Conservation",
+        title: "Lunar Eclipse",
+        price: 1.56,
         description:
           "This special NFT showcases a collectible card focused on wildlife conservation. The card features various endangered animals, highlighting the importance of protecting our planet's biodiversity. It serves as a reminder to cherish and preserve nature's beauty.",
-        img_bg: "/NFTs/nft_card_3.png",
+        img_bg: "/NFTs/8.jpg",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Nov 30, 2021",
         sales: 3.07,
@@ -178,10 +186,11 @@ export const artistData = [
       },
       {
         id: 2,
-        title: "The Wildlife Conservation 2",
+        title: "Whispers in the Wind",
+        price: 0.56,
         description:
           "This special NFT showcases a collectible card focused on wildlife conservation. The card features various endangered animals, highlighting the importance of protecting our planet's biodiversity. It serves as a reminder to cherish and preserve nature's beauty.",
-        img_bg: "/NFTs/nft_card_3.png",
+        img_bg: "/NFTs/9.jpg",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "Nov 30, 2021",
         sales: 1.1,
@@ -201,10 +210,11 @@ export const artistData = [
     nft: [
       {
         id: 1,
-        title: "The Fantasy Creatures",
+        title: "Celestial Union",
+        price: 0.91,
         description:
           "This magical NFT offers a collectible card featuring fantasy creatures. The card illustrates mythical beings such as dragons, unicorns, and fairies, transporting you into a realm of enchantment and wonder. It's ideal for anyone who appreciates the whimsy and imagination of fantasy worlds.",
-        img_bg: "/NFTs/nft_card_3.png",
+        img_bg: "/NFTs/10.jpg",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "April 16, 2023",
         sales: 2.11,
@@ -212,10 +222,11 @@ export const artistData = [
       },
       {
         id: 2,
-        title: "The Fantasy Creatures 2",
+        title: "Dancing with Shadows",
+        price: 0.71,
         description:
           "This magical NFT offers a collectible card featuring fantasy creatures. The card illustrates mythical beings such as dragons, unicorns, and fairies, transporting you into a realm of enchantment and wonder. It's ideal for anyone who appreciates the whimsy and imagination of fantasy worlds.",
-        img_bg: "/NFTs/nft_card_3.png",
+        img_bg: "/NFTs/11.jpg",
         tags: ["Animation", "Illustration", "Moon", "Space"],
         mintDate: "April 16, 2023",
         sales: 1.55,
